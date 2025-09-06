@@ -42,6 +42,16 @@ public class LoginPage {
         return driver.findElement(errorMessage).getText();
     }
 
+    public void login(String username, String password) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
+
+        enterUsername(username);
+        enterPassword(password);
+        clickLogin();
+    }
+
+
     public String isInventoryPageDisplayed() {
         return driver.getCurrentUrl();
     }

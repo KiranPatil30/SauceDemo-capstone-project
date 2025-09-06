@@ -1,42 +1,134 @@
 package tests;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import utils.DriverFactory;
+import base.BaseTest;
+import listeners.TestListener;
+import pages.LoginPage;
+import pages.ProductPage;
+import utils.ScreenshotUtil;
 
-public class ProductTest {
-	 WebDriver driver;
+@Listeners(TestListener.class)
+public class ProductTest extends BaseTest {
+    WebDriver driver;
+    ProductPage productPage;
+    LoginPage loginPage;
 
-	    @BeforeClass
-	    public void setUp() {
-	        driver = DriverFactory.getDriver();
-	        driver.get("https://www.saucedemo.com/inventory.html");  // Assume user is already logged in for simplicity
-	    }
+    @BeforeClass
+    public void setUp() {
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.saucedemo.com/");
 
-	    @Test
-	    public void verifyProductListDisplay() {
-	        List<WebElement> products = driver.findElements(By.className("inventory_item"));
-	        Assert.assertTrue(products.size() > 0, "Product list should not be empty");
+        driver.findElement(By.id("user-name")).sendKeys("standard_user");
+        driver.findElement(By.id("password")).sendKeys("secret_sauce");
+        driver.findElement(By.id("login-button")).click();
 
-	        for (WebElement product : products) {
-	            // Verify product name displayed
-	            Assert.assertTrue(product.findElement(By.className("inventory_item_name")).isDisplayed(), "Product name is not displayed");
+        loginPage = new LoginPage(driver);
 
-	            // Verify product price displayed
-	            Assert.assertTrue(product.findElement(By.className("inventory_item_price")).isDisplayed(), "Product price is not displayed");
+        productPage = new ProductPage(driver);
+        
+    }
 
-	            // Verify product image displayed
-	            Assert.assertTrue(product.findElement(By.tagName("img")).isDisplayed(), "Product image is not displayed");
+    
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+    
 
-	            // Verify Add to Cart button displayed
-	            Assert.assertTrue(product.findElement(By.tagName("button")).isDisplayed(), "Add to Cart button is not displayed");
-	        }
-	    }
+
+ @AfterMethod
+ public void resetAppState() {
+     // This refreshes the page, which also resets the cart on this specific website.
+     driver.navigate().refresh(); 
+ }
+    @Test(priority = 1)
+    public void TC009_TC010_verifyProductListDisplay() throws InterruptedException {
+        Assert.assertTrue(productPage.allProductsHaveDetails(), "Not all product elements are properly displayed.");
+        ScreenshotUtil.takeScreenshot(driver, "TC009_TC010_verifyProductListDisplay");
+    }
+
+    @Test(priority = 2)
+    public void TC011_sortByNameAToZ() {
+        productPage.selectSortOption("Name (A to Z)");
+        List<String> actual = productPage.getAllProductNames();
+        List<String> expected = new ArrayList<>(actual);
+        Collections.sort(expected);
+        Assert.assertEquals(actual, expected, "Products are not sorted A to Z");
+        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByNameAToZ");
+        
+    }
+
+    @Test(priority = 3)
+    public void TC011_sortByNameZToA() {
+        productPage.selectSortOption("Name (Z to A)");
+        List<String> actual = productPage.getAllProductNames();
+        List<String> expected = new ArrayList<>(actual);
+        Collections.sort(expected, Collections.reverseOrder());
+        Assert.assertEquals(actual, expected, "Products are not sorted Z to A");
+        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByNameZToA");
+
+    }
+
+    @Test(priority = 4)
+    public void TC011_sortByPriceLowToHigh() {
+        productPage.selectSortOption("Price (low to high)");
+        List<Double> actual = productPage.getAllProductPrices();
+        List<Double> expected = new ArrayList<>(actual);
+        Collections.sort(expected);
+        Assert.assertEquals(actual, expected, "Products are not sorted Low to High");
+        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByPriceLowToHigh");
+
+    }
+
+    @Test(priority = 5)
+    public void TC011_sortByPriceHighToLow() {
+        productPage.selectSortOption("Price (high to low)");
+        List<Double> actual = productPage.getAllProductPrices();
+        List<Double> expected = new ArrayList<>(actual);
+        Collections.sort(expected, Collections.reverseOrder());
+        Assert.assertEquals(actual, expected, "Products are not sorted High to Low");
+        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByPriceHighToLow");
+
+    }
+
+ // Change this test's priority from 7 to 6
+    @Test(priority = 6)
+    public void TC012_addProductToCart() throws InterruptedException {
+        productPage.addProductToCart("Sauce Labs Backpack");
+        Assert.assertEquals(productPage.getAddToCartButtonText("Sauce Labs Backpack"), "Remove");
+        ScreenshotUtil.takeScreenshot(driver, "TC012_addProductToCart");
+    }
+
+
+
+    @Test(priority = 9)
+    public void TC015_clickOnProductDetailsPage() throws InterruptedException {
+        productPage.clickOnProduct("Sauce Labs Backpack");
+        Assert.assertEquals(productPage.getProductDetailName(), "Sauce Labs Backpack", "Incorrect product detail page");
+        ScreenshotUtil.takeScreenshot(driver, "TC015_clickOnProductDetailsPage");
+
+    }
+
+    @Test(priority = 10, expectedExceptions = RuntimeException.class)
+    public void TC016_addInvalidProduct() throws InterruptedException {
+        productPage.addProductToCart("Non Existent Product");
+        ScreenshotUtil.takeScreenshot(driver, "TC016_addInvalidProduct");
+
+    }
 }

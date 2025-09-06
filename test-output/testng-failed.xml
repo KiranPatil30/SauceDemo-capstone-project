@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestRunner.TestRunner">
+      <class name="tests.CheckOutTest">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="5"/>
-          <include name="tearDownClass"/>
+          <include name="suiteSetup"/>
+          <include name="suiteTearDown"/>
+          <include name="TC022_checkoutWithMissingRequiredFields"/>
+          <include name="setUpTest"/>
+          <include name="resetToCheckoutForm"/>
         </methods>
-      </class> <!-- TestRunner.TestRunner -->
+      </class> <!-- tests.CheckOutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

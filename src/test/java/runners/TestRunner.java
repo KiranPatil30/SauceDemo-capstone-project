@@ -1,12 +1,12 @@
-package TestRunner;
+package runners;
 
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "src/test/resources/features", // ✅ This must match exactly
-    glue = "stepDefinitions",                 // ✅ Package where steps are written
+    features = "src/test/resources/features", 
+    glue = "stepDefinitions",                
     plugin = {"pretty", "html:target/cucumber-report.html"},
     monochrome = true
 )

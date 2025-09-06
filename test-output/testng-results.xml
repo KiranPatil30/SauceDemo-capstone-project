@@ -1,159 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-04T16:11:10 IST" name="Default suite" finished-at="2025-09-04T16:11:34 IST" duration-ms="24023">
+  <suite started-at="2025-09-07T00:35:58 IST" name="MySuite" finished-at="2025-09-07T00:36:18 IST" duration-ms="19929">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
+      <group name="login">
+        <method signature="LoginTest.testValidLogin()[pri:8, instance:tests.LoginTest@4c5ae43b]" name="testValidLogin" class="tests.LoginTest"/>
+      </group> <!-- login -->
     </groups>
-    <test started-at="2025-09-04T16:11:10 IST" name="Default test" finished-at="2025-09-04T16:11:34 IST" duration-ms="24023">
-      <class name="TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:10 IST" name="setUpClass" finished-at="2025-09-04T16:11:11 IST" duration-ms="401" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@5e9f73b]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-09-07T00:35:58 IST" name="SauceDemo Website Tests" finished-at="2025-09-07T00:36:18 IST" duration-ms="19929">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:35:56 IST" name="suiteSetup" finished-at="2025-09-07T00:35:58 IST" duration-ms="2664" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:15 IST" duration-ms="3890" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Valid login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- suiteSetup -->
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:35:58 IST" name="setupTest" finished-at="2025-09-07T00:35:59 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:17 IST" duration-ms="2735" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Empty username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setupTest -->
+        <test-method signature="testProblemUser()[pri:2, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:35:59 IST" name="testProblemUser" finished-at="2025-09-07T00:35:59 IST" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:20 IST" duration-ms="2856" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Invalid username"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testProblemUser -->
+        <test-method signature="testEmptyUsername()[pri:3, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:00 IST" name="testEmptyUsername" finished-at="2025-09-07T00:36:00 IST" duration-ms="478" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:23 IST" duration-ms="2754" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Empty password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testEmptyUsername -->
+        <test-method signature="testInvalidUsername()[pri:4, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:00 IST" name="testInvalidUsername" finished-at="2025-09-07T00:36:00 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:23 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:26 IST" duration-ms="2928" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Invalid password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testInvalidUsername -->
+        <test-method signature="testEmptyPassword()[pri:5, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:00 IST" name="testEmptyPassword" finished-at="2025-09-07T00:36:01 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:29 IST" duration-ms="2790" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Empty username and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testEmptyPassword -->
+        <test-method signature="testInvalidPassword()[pri:6, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:01 IST" name="testInvalidPassword" finished-at="2025-09-07T00:36:01 IST" duration-ms="437" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:31 IST" duration-ms="2734" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Locked out user"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testInvalidPassword -->
+        <test-method signature="testEmptyUsernameAndPassword()[pri:7, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:01 IST" name="testEmptyUsernameAndPassword" finished-at="2025-09-07T00:36:02 IST" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-04T16:11:34 IST" duration-ms="2859" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Problem user login"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testEmptyUsernameAndPassword -->
+        <test-method signature="testLockedOutUser()[pri:8, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:02 IST" name="testLockedOutUser" finished-at="2025-09-07T00:36:02 IST" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@2df3b89c]" started-at="2025-09-04T16:11:34 IST" name="tearDownClass" finished-at="2025-09-04T16:11:34 IST" duration-ms="32" status="PASS">
+        </test-method> <!-- testLockedOutUser -->
+        <test-method signature="testValidLogin()[pri:8, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:02 IST" name="testValidLogin" finished-at="2025-09-07T00:36:02 IST" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- TestRunner.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.LoginTest@4c5ae43b]" started-at="2025-09-07T00:36:19 IST" name="suiteTearDown" finished-at="2025-09-07T00:36:19 IST" duration-ms="234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suiteTearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.CheckOutTest">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:16 IST" name="setUpTest" finished-at="2025-09-07T00:36:17 IST" duration-ms="623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:17 IST" name="resetToCheckoutForm" finished-at="2025-09-07T00:36:17 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetToCheckoutForm -->
+        <test-method signature="TC020_navigateToCheckoutPage()[pri:1, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:17 IST" name="TC020_navigateToCheckoutPage" finished-at="2025-09-07T00:36:17 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC020_navigateToCheckoutPage -->
+        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:17 IST" name="resetToCheckoutForm" finished-at="2025-09-07T00:36:17 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetToCheckoutForm -->
+        <test-method signature="TC022_checkoutWithMissingRequiredFields()[pri:2, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:17 IST" name="TC022_checkoutWithMissingRequiredFields" finished-at="2025-09-07T00:36:18 IST" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC022_checkoutWithMissingRequiredFields -->
+        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:18 IST" name="resetToCheckoutForm" finished-at="2025-09-07T00:36:18 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetToCheckoutForm -->
+        <test-method signature="TC021_checkoutWithValidInformation()[pri:3, instance:tests.CheckOutTest@1169afe1]" started-at="2025-09-07T00:36:18 IST" name="TC021_checkoutWithValidInformation" finished-at="2025-09-07T00:36:18 IST" duration-ms="739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC021_checkoutWithValidInformation -->
+      </class> <!-- tests.CheckOutTest -->
+      <class name="tests.CartTest">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:tests.CartTest@747f281]" started-at="2025-09-07T00:36:14 IST" name="setUpPages" finished-at="2025-09-07T00:36:15 IST" duration-ms="680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPages -->
+        <test-method signature="testAddProductToCart()[pri:1, instance:tests.CartTest@747f281]" started-at="2025-09-07T00:36:15 IST" name="testAddProductToCart" finished-at="2025-09-07T00:36:15 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductToCart -->
+        <test-method signature="testRemoveProductFromCart()[pri:2, instance:tests.CartTest@747f281]" started-at="2025-09-07T00:36:15 IST" name="testRemoveProductFromCart" finished-at="2025-09-07T00:36:16 IST" duration-ms="266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveProductFromCart -->
+        <test-method signature="testContinueShopping()[pri:4, instance:tests.CartTest@747f281]" started-at="2025-09-07T00:36:16 IST" name="testContinueShopping" finished-at="2025-09-07T00:36:16 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContinueShopping -->
+        <test-method signature="testProceedToCheckout()[pri:5, instance:tests.CartTest@747f281]" started-at="2025-09-07T00:36:16 IST" name="testProceedToCheckout" finished-at="2025-09-07T00:36:16 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProceedToCheckout -->
+      </class> <!-- tests.CartTest -->
+      <class name="tests.ProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:02 IST" name="setUp" finished-at="2025-09-07T00:36:05 IST" duration-ms="2328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC009_TC010_verifyProductListDisplay()[pri:1, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:05 IST" name="TC009_TC010_verifyProductListDisplay" finished-at="2025-09-07T00:36:07 IST" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC009_TC010_verifyProductListDisplay -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:07 IST" name="resetAppState" finished-at="2025-09-07T00:36:07 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC011_sortByNameAToZ()[pri:2, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:07 IST" name="TC011_sortByNameAToZ" finished-at="2025-09-07T00:36:08 IST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_sortByNameAToZ -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:08 IST" name="resetAppState" finished-at="2025-09-07T00:36:08 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC011_sortByNameZToA()[pri:3, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:08 IST" name="TC011_sortByNameZToA" finished-at="2025-09-07T00:36:08 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_sortByNameZToA -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:08 IST" name="resetAppState" finished-at="2025-09-07T00:36:08 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC011_sortByPriceLowToHigh()[pri:4, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:08 IST" name="TC011_sortByPriceLowToHigh" finished-at="2025-09-07T00:36:08 IST" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_sortByPriceLowToHigh -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:08 IST" name="resetAppState" finished-at="2025-09-07T00:36:09 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC011_sortByPriceHighToLow()[pri:5, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:09 IST" name="TC011_sortByPriceHighToLow" finished-at="2025-09-07T00:36:09 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011_sortByPriceHighToLow -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:09 IST" name="resetAppState" finished-at="2025-09-07T00:36:09 IST" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC012_addProductToCart()[pri:6, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:09 IST" name="TC012_addProductToCart" finished-at="2025-09-07T00:36:10 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012_addProductToCart -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:10 IST" name="resetAppState" finished-at="2025-09-07T00:36:10 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC015_clickOnProductDetailsPage()[pri:9, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:10 IST" name="TC015_clickOnProductDetailsPage" finished-at="2025-09-07T00:36:14 IST" duration-ms="4245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015_clickOnProductDetailsPage -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:14 IST" name="resetAppState" finished-at="2025-09-07T00:36:14 IST" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method signature="TC016_addInvalidProduct()[pri:10, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:14 IST" name="TC016_addInvalidProduct" finished-at="2025-09-07T00:36:14 IST" duration-ms="67" status="PASS">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='inventory_item']//div[text()='Non Existent Product']/ancestor::div[@class='inventory_item']//button"}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9fae63cb37ec8009b4027683ba8b991, findElement {using=xpath, value=//div[@class='inventory_item']//div[text()='Non Existent Product']/ancestor::div[@class='inventory_item']//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58342/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9fae63cb37ec8009b4027683ba8b991]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='inventory_item']//div[text()='Non Existent Product']/ancestor::div[@class='inventory_item']//button"}
+  (Session info: chrome=140.0.7339.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9fae63cb37ec8009b4027683ba8b991, findElement {using=xpath, value=//div[@class='inventory_item']//div[text()='Non Existent Product']/ancestor::div[@class='inventory_item']//button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58342/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9fae63cb37ec8009b4027683ba8b991
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at pages.ProductPage.addProductToCart(ProductPage.java:78)
+at tests.ProductTest.TC016_addInvalidProduct(ProductTest.java:130)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016_addInvalidProduct -->
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:14 IST" name="resetAppState" finished-at="2025-09-07T00:36:14 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetAppState -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductTest@81d9a72]" started-at="2025-09-07T00:36:14 IST" name="tearDown" finished-at="2025-09-07T00:36:14 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductTest -->
+    </test> <!-- SauceDemo Website Tests -->
+  </suite> <!-- MySuite -->
 </testng-results>

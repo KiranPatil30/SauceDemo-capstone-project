@@ -6,14 +6,15 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import base.BaseTest;
 import listeners.TestListener;
 import pages.LoginPage;
 import utils.ScreenshotUtil;
 
 @Listeners(TestListener.class)
-public class LoginTest  {
+public class LoginTest extends BaseTest {
 
-	WebDriver driver;
+//	WebDriver driver;
     LoginPage loginPage;
 
     @BeforeClass
@@ -23,7 +24,7 @@ public class LoginTest  {
         ScreenshotUtil.takeScreenshot(driver, "LoginPage_Loaded");
     }
 
-    @Test(priority = 8)
+    @Test(priority = 8,groups = "login")
     public void testValidLogin() {
         loginPage.enterUsername("standard_user");
         loginPage.enterPassword("secret_sauce");
@@ -54,7 +55,8 @@ public class LoginTest  {
         loginPage.clickLogin();
 
         String actualError = loginPage.getErrorMessage();
-        Assert.assertEquals(actualError, "Epic sadface: Username is required");
+        Assert.assertEquals(actualError, "Epic sadface: Username and password do not match any user in this service");
+
         ScreenshotUtil.takeScreenshot(driver, "testEmptyUsername");
     }
     
@@ -86,8 +88,8 @@ public class LoginTest  {
     @Test(priority = 7)
     public void testEmptyUsernameAndPassword() {
         driver.get("https://www.saucedemo.com/");
-        loginPage.enterUsername(" ");
-        loginPage.enterPassword(" ");
+        loginPage.enterUsername("");
+        loginPage.enterPassword("");
         loginPage.clickLogin();
 
         String actualError = loginPage.getErrorMessage();
@@ -120,7 +122,7 @@ public class LoginTest  {
 
         ScreenshotUtil.takeScreenshot(driver, "testProblemUser");
     }
-    
+ 
    
    
 }
