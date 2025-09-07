@@ -6,17 +6,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
-import pages.CheckOutPage;
+import pages.CheckoutPage;
 
-public class CheckOutTest extends BaseTest {
+public class CheckoutTest extends BaseTest {
 
-    CheckOutPage checkoutPage;
+    CheckoutPage checkoutPage;
 
     @BeforeClass
     public void setUpTest() {
         driver = driver != null ? driver : utils.DriverFactory.initDriver(); 
 
-        checkoutPage = new CheckOutPage(driver);
+        checkoutPage = new CheckoutPage(driver);
         checkoutPage.loginAndAddToCartToCheckout("standard_user", "secret_sauce");
 
         Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"),

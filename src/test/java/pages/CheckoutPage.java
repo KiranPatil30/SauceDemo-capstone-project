@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class CheckOutPage {
+public class CheckoutPage {
     WebDriver driver;
 
     // Locators
@@ -16,7 +16,7 @@ public class CheckOutPage {
     By cancelButton = By.id("cancel");
     By finishButton = By.id("finish");
 
-    public CheckOutPage(WebDriver driver) {
+    public CheckoutPage(WebDriver driver) {
         this.driver = driver;
     }
 
