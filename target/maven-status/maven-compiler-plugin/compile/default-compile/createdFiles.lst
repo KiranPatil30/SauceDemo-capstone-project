@@ -1,0 +1,5 @@
+com\example\SauceDemo_capstone_project\App.class
+utils\ConfigReader.class
+utils\ScreenshotUtil.class
+utils\DriverFactory.class
+utils\ExtentManager.class
