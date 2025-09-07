@@ -22,9 +22,10 @@ public class CheckoutPage {
 
     public void loginAndAddToCartToCheckout(String username, String password) {
         driver.get("https://www.saucedemo.com");
-        driver.findElement(By.id("user-name")).sendKeys(username);
-        driver.findElement(By.id("password")).sendKeys(password);
-        driver.findElement(By.id("login-button")).click();
+//        driver.findElement(By.id("user-name")).sendKeys(username);
+//        driver.findElement(By.id("password")).sendKeys(password);
+//        driver.findElement(By.id("login-button")).click();
+        new LoginPage(driver).login(username, password);
 
         // Add product to cart
         ProductPage productPage = new ProductPage(driver);

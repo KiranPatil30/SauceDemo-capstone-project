@@ -18,7 +18,7 @@ public class BaseTest {
   
 
          driver = DriverFactory.initDriver();
-        driver.get("https://www.saucedemo.com/"); // ✅ Make sure this is correct login URL
+        driver.get("https://www.saucedemo.com/"); 
 
     }
 

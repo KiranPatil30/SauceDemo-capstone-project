@@ -16,11 +16,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testLockedOutUser</td>
+<td>testEmptyUsernameAndPassword</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testEmptyUsernameAndPassword</td>
+<td>testLockedOutUser</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -32,15 +32,15 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
+<td>testInvalidUsername</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
 <td>testProblemUser</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>testEmptyPassword</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
-<td>testInvalidUsername</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -52,6 +52,10 @@
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>loadLoginPage</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@AfterMethod</td>
 </tr>
@@ -104,35 +108,35 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC011_sortByPriceHighToLow</td>
+<td>addInvalidProduct</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC011_sortByPriceLowToHigh</td>
+<td>sortByNameAToZ</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC011_sortByNameZToA</td>
+<td>verifyProductListDisplay</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC009_TC010_verifyProductListDisplay</td>
+<td>sortByPriceHighToLow</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC016_addInvalidProduct</td>
+<td>sortByNameZToA</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC012_addProductToCart</td>
+<td>sortByPriceLowToHigh</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC015_clickOnProductDetailsPage</td>
+<td>addProductToCart</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC011_sortByNameAToZ</td>
+<td>clickOnProductDetailsPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -154,10 +158,6 @@
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>tearDown</td>
-<td>&nbsp;</td></tr>
 <tr>
 <td>tests.CheckoutTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>

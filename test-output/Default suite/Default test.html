@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>24/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 07 15:03:46 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 07 16:02:11 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5331 ms)</td>
+<tr><td>Total time:</td><td>79 seconds (79048 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,69 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User proceeds to checkout", "Shopping Cart Functionality"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: JavaScript code failed
+from unknown command: &apos;Runtime.evaluate&apos; wasn&apos;t found
+  (Session info: chrome=140.0.7339.80)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30c90816eb052b112f5df98a96f2caf0, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58038/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c90816eb052b112f5df98a96f2caf0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
+	at utils.DriverFactory.initDriver(DriverFactory.java:36)
+	at stepDefinitions.Hooks.setUp(Hooks.java:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace899736725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace899736725'><pre>org.openqa.selenium.WebDriverException: unknown error: JavaScript code failed
+from unknown command: &apos;Runtime.evaluate&apos; wasn&apos;t found
+  (Session info: chrome=140.0.7339.80)
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30c90816eb052b112f5df98a96f2caf0, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58038}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58038/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30c90816eb052b112f5df98a96f2caf0
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
+	at utils.DriverFactory.initDriver(DriverFactory.java:36)
+	at stepDefinitions.Hooks.setUp(Hooks.java:11)
+</pre></div></td>
+<td>1</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,45 +139,125 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.LoginTest.testProblemUser()'><b>testProblemUser</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC012 Add a product to the cart", "Product page functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testLockedOutUser()'><b>testLockedOutUser</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User logs in successfully", "Shopping Cart Functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>3</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testInvalidPassword()'><b>testInvalidPassword</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC009 Verify product listing page after login", "Product page functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testEmptyUsername()'><b>testEmptyUsername</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid password", "Login Functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>3</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testEmptyUsernameAndPassword()'><b>testEmptyUsernameAndPassword</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User removes an item from the cart", "Shopping Cart Functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>12</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty username and password", "Login Functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testInvalidUsername()'><b>testInvalidUsername</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC011 Verify sorting options", "Product page functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 <tr>
-<td title='tests.LoginTest.testEmptyPassword()'><b>testEmptyPassword</b><br>Test class: tests.LoginTest</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC014 Add multiple products to the cart", "Product page functionality"</td>
 <td></td>
-<td>0</td>
-<td>tests.LoginTest@24aed80c</td></tr>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Problem user login", "Login Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds a product to the cart", "Shopping Cart Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid username", "Login Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC015 Click on a product to go to its details page", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty username", "Login Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC014 Add multiple products to the cart", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC013 Remove a product from the cart", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC011 Verify sorting options", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid login", "Login Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC011 Verify sorting options", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC011 Verify sorting options", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty password", "Login Functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC010 Verify product names and prices are displayed", "Product page functionality"</td>
+<td></td>
+<td>3</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC014 Add multiple products to the cart", "Product page functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Locked out user", "Login Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User continues shopping from the cart", "Shopping Cart Functionality"</td>
+<td></td>
+<td>2</td>
+<td>runners.TestRunner@2df3b89c</td></tr>
 </table><p>
 </body>
 </html>

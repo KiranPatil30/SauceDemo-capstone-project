@@ -22,6 +22,20 @@ public class CartPage {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
+    public void loginToProductPageToCartPage(String username, String password, String productName) {
+        // Go to login page and login
+        driver.get("https://www.saucedemo.com/");
+        driver.findElement(By.id("user-name")).sendKeys(username);
+        driver.findElement(By.id("password")).sendKeys(password);
+        driver.findElement(By.id("login-button")).click();
+
+        // Add product to cart
+        driver.findElement(By.xpath("//div[text()='" + productName + "']/following-sibling::div//button")).click();
+
+        // Navigate to cart
+        driver.findElement(By.className("shopping_cart_link")).click();
+    }
+
 
     public boolean isOnCartPage() {
         WebElement title = wait.until(ExpectedConditions.visibilityOfElementLocated(cartTitle));

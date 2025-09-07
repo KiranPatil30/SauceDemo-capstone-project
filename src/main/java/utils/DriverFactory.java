@@ -45,11 +45,12 @@ public class DriverFactory {
         if (webDriver != null) {
             System.out.println("Closing browser...");
             webDriver.quit();
-            driver.remove();
+            driver.remove(); // important to clear ThreadLocal reference
         } else {
             System.out.println("Driver was already null.");
         }
     }
+
 
     
 }

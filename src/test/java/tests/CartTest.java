@@ -25,6 +25,7 @@ public class CartTest extends BaseTest {
     @BeforeClass
     public void setUpPages() {
         driver = driver != null ? driver : utils.DriverFactory.initDriver();
+        
         loginPage = new LoginPage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
@@ -75,6 +76,6 @@ public class CartTest extends BaseTest {
     	Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"), "Did not navigate to Checkout Page!");
     	ScreenshotUtil.takeScreenshot(driver, "testProceedToCheckout"); 
     	}
-   
+    
 
 }

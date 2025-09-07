@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CartTest">
+      <class name="runners.TestRunner">
         <methods>
-          <include name="suiteSetup"/>
-          <include name="testProceedToCheckout"/>
-          <include name="testRemoveProductFromCart"/>
-          <include name="suiteTearDown"/>
-          <include name="testContinueShopping"/>
-          <include name="setUpPages"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="4"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- tests.CartTest -->
+      </class> <!-- runners.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

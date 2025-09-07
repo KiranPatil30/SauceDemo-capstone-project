@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -91,9 +92,5 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(loginPage.isInventoryPageDisplayed(), "Inventory page not displayed!");
         ScreenshotUtil.takeScreenshot(driver, "testProblemUser");
     }
-
-//    @AfterClass
-//    public void tearDown() {
-//        DriverFactory.quitDriver();
-//    }
+    
 }
