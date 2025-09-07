@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Sep 07 00:35:58 IST 2025</td>
+<td>Started on:</td><td>Sun Sep 07 09:31:42 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19929 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24678 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -81,21 +81,6 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>tests.LoginTest@4c5ae43b</td></tr>
 <tr>
-<td title='tests.CheckOutTest.TC022_checkoutWithMissingRequiredFields()'><b>TC022_checkoutWithMissingRequiredFields</b><br>Test class: tests.CheckOutTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CheckOutTest@1169afe1</td></tr>
-<tr>
-<td title='tests.CartTest.testAddProductToCart()'><b>testAddProductToCart</b><br>Test class: tests.CartTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CartTest@747f281</td></tr>
-<tr>
-<td title='tests.LoginTest.testProblemUser()'><b>testProblemUser</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@4c5ae43b</td></tr>
-<tr>
 <td title='tests.ProductTest.TC016_addInvalidProduct()'><b>TC016_addInvalidProduct</b><br>Test class: tests.ProductTest</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button&quot;}
   (Session info: chrome=140.0.7339.80)
@@ -103,9 +88,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9fae63cb37ec8009b4027683ba8b991, findElement {using=xpath, value=//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58342/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9fae63cb37ec8009b4027683ba8b991
+Command: [151b73756684dd7c491b72f0c8531fbb, findElement {value=//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60734/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 151b73756684dd7c491b72f0c8531fbb
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -120,16 +105,16 @@ Session ID: c9fae63cb37ec8009b4027683ba8b991
 	at pages.ProductPage.addProductToCart(ProductPage.java:78)
 	at tests.ProductTest.TC016_addInvalidProduct(ProductTest.java:130)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace447477005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace447477005'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button&quot;}
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1509506488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1509506488'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button&quot;}
   (Session info: chrome=140.0.7339.80)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c9fae63cb37ec8009b4027683ba8b991, findElement {using=xpath, value=//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58342}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58342/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c9fae63cb37ec8009b4027683ba8b991
+Command: [151b73756684dd7c491b72f0c8531fbb, findElement {value=//div[@class=&apos;inventory_item&apos;]//div[text()=&apos;Non Existent Product&apos;]/ancestor::div[@class=&apos;inventory_item&apos;]//button, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\kiran\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60734/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 151b73756684dd7c491b72f0c8531fbb
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -176,42 +161,52 @@ Session ID: c9fae63cb37ec8009b4027683ba8b991
 <td>0</td>
 <td>tests.ProductTest@81d9a72</td></tr>
 <tr>
-<td title='tests.ProductTest.TC011_sortByNameAToZ()'><b>TC011_sortByNameAToZ</b><br>Test class: tests.ProductTest</td>
+<td title='tests.CartTest.testContinueShopping()'><b>testContinueShopping</b><br>Test class: tests.CartTest</td>
 <td></td>
 <td>0</td>
-<td>tests.ProductTest@81d9a72</td></tr>
-<tr>
-<td title='tests.LoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@4c5ae43b</td></tr>
-<tr>
-<td title='tests.ProductTest.TC009_TC010_verifyProductListDisplay()'><b>TC009_TC010_verifyProductListDisplay</b><br>Test class: tests.ProductTest</td>
-<td></td>
-<td>2</td>
-<td>tests.ProductTest@81d9a72</td></tr>
+<td>tests.CartTest@747f281</td></tr>
 <tr>
 <td title='tests.ProductTest.TC011_sortByNameZToA()'><b>TC011_sortByNameZToA</b><br>Test class: tests.ProductTest</td>
 <td></td>
 <td>0</td>
 <td>tests.ProductTest@81d9a72</td></tr>
 <tr>
-<td title='tests.ProductTest.TC012_addProductToCart()'><b>TC012_addProductToCart</b><br>Test class: tests.ProductTest</td>
+<td title='tests.CheckOutTest.TC021_checkoutWithValidInformation()'><b>TC021_checkoutWithValidInformation</b><br>Test class: tests.CheckOutTest</td>
 <td></td>
 <td>0</td>
-<td>tests.ProductTest@81d9a72</td></tr>
+<td>tests.CheckOutTest@1169afe1</td></tr>
 <tr>
 <td title='tests.LoginTest.testLockedOutUser()'><b>testLockedOutUser</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>tests.LoginTest@4c5ae43b</td></tr>
 <tr>
-<td title='tests.CheckOutTest.TC020_navigateToCheckoutPage()'><b>TC020_navigateToCheckoutPage</b><br>Test class: tests.CheckOutTest</td>
+<td title='tests.LoginTest.testEmptyUsername()'><b>testEmptyUsername</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>0</td>
-<td>tests.CheckOutTest@1169afe1</td></tr>
+<td>tests.LoginTest@4c5ae43b</td></tr>
 <tr>
-<td title='tests.LoginTest.testInvalidPassword()'><b>testInvalidPassword</b><br>Test class: tests.LoginTest</td>
+<td title='tests.LoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@4c5ae43b</td></tr>
+<tr>
+<td title='tests.ProductTest.TC012_addProductToCart()'><b>TC012_addProductToCart</b><br>Test class: tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductTest@81d9a72</td></tr>
+<tr>
+<td title='tests.ProductTest.TC011_sortByPriceLowToHigh()'><b>TC011_sortByPriceLowToHigh</b><br>Test class: tests.ProductTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ProductTest@81d9a72</td></tr>
+<tr>
+<td title='tests.ProductTest.TC009_TC010_verifyProductListDisplay()'><b>TC009_TC010_verifyProductListDisplay</b><br>Test class: tests.ProductTest</td>
+<td></td>
+<td>3</td>
+<td>tests.ProductTest@81d9a72</td></tr>
+<tr>
+<td title='tests.LoginTest.testProblemUser()'><b>testProblemUser</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>tests.LoginTest@4c5ae43b</td></tr>
@@ -221,37 +216,17 @@ Session ID: c9fae63cb37ec8009b4027683ba8b991
 <td>4</td>
 <td>tests.ProductTest@81d9a72</td></tr>
 <tr>
-<td title='tests.CartTest.testContinueShopping()'><b>testContinueShopping</b><br>Test class: tests.CartTest</td>
+<td title='tests.CheckOutTest.TC022_checkoutWithMissingRequiredFields()'><b>TC022_checkoutWithMissingRequiredFields</b><br>Test class: tests.CheckOutTest</td>
 <td></td>
 <td>0</td>
-<td>tests.CartTest@747f281</td></tr>
-<tr>
-<td title='tests.LoginTest.testEmptyUsername()'><b>testEmptyUsername</b><br>Test class: tests.LoginTest</td>
-<td></td>
-<td>0</td>
-<td>tests.LoginTest@4c5ae43b</td></tr>
+<td>tests.CheckOutTest@1169afe1</td></tr>
 <tr>
 <td title='tests.LoginTest.testEmptyPassword()'><b>testEmptyPassword</b><br>Test class: tests.LoginTest</td>
 <td></td>
 <td>0</td>
 <td>tests.LoginTest@4c5ae43b</td></tr>
 <tr>
-<td title='tests.CartTest.testProceedToCheckout()'><b>testProceedToCheckout</b><br>Test class: tests.CartTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CartTest@747f281</td></tr>
-<tr>
-<td title='tests.CheckOutTest.TC021_checkoutWithValidInformation()'><b>TC021_checkoutWithValidInformation</b><br>Test class: tests.CheckOutTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CheckOutTest@1169afe1</td></tr>
-<tr>
-<td title='tests.CartTest.testRemoveProductFromCart()'><b>testRemoveProductFromCart</b><br>Test class: tests.CartTest</td>
-<td></td>
-<td>0</td>
-<td>tests.CartTest@747f281</td></tr>
-<tr>
-<td title='tests.ProductTest.TC011_sortByPriceLowToHigh()'><b>TC011_sortByPriceLowToHigh</b><br>Test class: tests.ProductTest</td>
+<td title='tests.ProductTest.TC011_sortByPriceHighToLow()'><b>TC011_sortByPriceHighToLow</b><br>Test class: tests.ProductTest</td>
 <td></td>
 <td>0</td>
 <td>tests.ProductTest@81d9a72</td></tr>
@@ -261,10 +236,35 @@ Session ID: c9fae63cb37ec8009b4027683ba8b991
 <td>0</td>
 <td>tests.LoginTest@4c5ae43b</td></tr>
 <tr>
-<td title='tests.ProductTest.TC011_sortByPriceHighToLow()'><b>TC011_sortByPriceHighToLow</b><br>Test class: tests.ProductTest</td>
+<td title='tests.LoginTest.testInvalidPassword()'><b>testInvalidPassword</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@4c5ae43b</td></tr>
+<tr>
+<td title='tests.CartTest.testAddProductToCart()'><b>testAddProductToCart</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CartTest@747f281</td></tr>
+<tr>
+<td title='tests.ProductTest.TC011_sortByNameAToZ()'><b>TC011_sortByNameAToZ</b><br>Test class: tests.ProductTest</td>
 <td></td>
 <td>0</td>
 <td>tests.ProductTest@81d9a72</td></tr>
+<tr>
+<td title='tests.CartTest.testProceedToCheckout()'><b>testProceedToCheckout</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CartTest@747f281</td></tr>
+<tr>
+<td title='tests.CartTest.testRemoveProductFromCart()'><b>testRemoveProductFromCart</b><br>Test class: tests.CartTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CartTest@747f281</td></tr>
+<tr>
+<td title='tests.CheckOutTest.TC020_navigateToCheckoutPage()'><b>TC020_navigateToCheckoutPage</b><br>Test class: tests.CheckOutTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CheckOutTest@1169afe1</td></tr>
 </table><p>
 </body>
 </html>

@@ -14,7 +14,7 @@ public class CheckOutTest extends BaseTest {
 
     @BeforeClass
     public void setUpTest() {
-        driver = driver != null ? driver : utils.DriverFactory.initDriver(); // Ensure driver is ready
+        driver = driver != null ? driver : utils.DriverFactory.initDriver(); 
 
         checkoutPage = new CheckOutPage(driver);
         checkoutPage.loginAndAddToCartToCheckout("standard_user", "secret_sauce");
