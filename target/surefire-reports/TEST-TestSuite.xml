@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="33.04" tests="23" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Capstone Project\SauceDemo-capstone-project\target\test-classes;D:\Capstone Project\SauceDemo-capstone-project\target\classes;C:\Users\kiran\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\kiran\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\kiran\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\kiran\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kiran\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kiran\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\kiran\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\kiran\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\kiran\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\kiran\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\kiran\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\kiran\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\kiran\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\kiran\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\kiran\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\kiran\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\kiran\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\kiran\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\kiran\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\kiran\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kiran\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\kiran\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4\bin"/>
+    <property name="sun.java.command" value="C:\Users\kiran\AppData\Local\Temp\surefire4078125222881250194\surefirebooter-20250907121032685_3.jar C:\Users\kiran\AppData\Local\Temp\surefire4078125222881250194 2025-09-07T12-10-32_563-jvmRun1 surefire-20250907121032685_1tmp surefire_0-20250907121032685_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Capstone Project\SauceDemo-capstone-project\target\test-classes;D:\Capstone Project\SauceDemo-capstone-project\target\classes;C:\Users\kiran\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\kiran\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\kiran\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\kiran\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\kiran\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\kiran\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\kiran\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\kiran\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\kiran\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\kiran\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\kiran\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\kiran\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\kiran\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\kiran\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\kiran\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\kiran\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\kiran\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\kiran\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\kiran\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\kiran\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\kiran\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\kiran\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\kiran\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\kiran\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\kiran\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\kiran\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\kiran"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-07-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Capstone Project\SauceDemo-capstone-project"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\kiran\AppData\Local\Temp\surefire4078125222881250194\surefirebooter-20250907121032685_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.4+11-LTS-179"/>
+    <property name="user.name" value="kiran"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\kiran\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\kiran\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.4"/>
+    <property name="user.dir" value="D:\Capstone Project\SauceDemo-capstone-project"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\oraclexe\app\oracle\product\11.2.0\server;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.4\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\kiran\Downloads\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;C:\Program Files\Java\jdk-17.0.4\bin;C:\Users\kiran\AppData\Local\Microsoft\WindowsApps;C:\Users\kiran\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kiran\AppData\Roaming\npm;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.4+11-LTS-179"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testProblemUser" classname="tests.LoginTest" time="0.518">
+    <system-out><![CDATA[Test Suite started!
+Screenshot saved: D:\screenshot\2025-09-07\LoginPage_Loaded_1757227236554.png
+Screenshot saved: D:\screenshot\2025-09-07\testProblemUser_1757227237086.png
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Sep 07, 2025 12:10:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 12:10:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyUsername" classname="tests.LoginTest" time="0.403">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testEmptyUsername_1757227237497.png
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidUsername" classname="tests.LoginTest" time="0.338">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testEmptyUsername_1757227237836.png
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyPassword" classname="tests.LoginTest" time="0.296">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testEmptyPassword_1757227238133.png
+]]></system-out>
+  </testcase>
+  <testcase name="testInvalidPassword" classname="tests.LoginTest" time="0.368">
+    <system-out><![CDATA[Actusl error of invalid passwEpic sadface: Username and password do not match any user in this service
+Screenshot saved: D:\screenshot\2025-09-07\testInvalidPassword_1757227238503.png
+]]></system-out>
+  </testcase>
+  <testcase name="testEmptyUsernameAndPassword" classname="tests.LoginTest" time="0.285">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testEmptyPassword_1757227238788.png
+]]></system-out>
+  </testcase>
+  <testcase name="testLockedOutUser" classname="tests.LoginTest" time="0.317">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testLockedOutUser_1757227239105.png
+]]></system-out>
+  </testcase>
+  <testcase name="testValidLogin" classname="tests.LoginTest" time="0.321">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testValidLogin_1757227239427.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC009_TC010_verifyProductListDisplay" classname="tests.ProductTest" time="2.821">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC009_TC010_verifyProductListDisplay_1757227244309.png
+]]></system-out>
+    <system-err><![CDATA[Sep 07, 2025 12:10:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 12:10:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC011_sortByNameAToZ" classname="tests.ProductTest" time="0.439">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC009_TC010_verifyProductListDisplay_1757227244505.png
+Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByNameAToZ_1757227245010.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC011_sortByNameZToA" classname="tests.ProductTest" time="0.368">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByNameAToZ_1757227245172.png
+Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByNameZToA_1757227245590.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC011_sortByPriceLowToHigh" classname="tests.ProductTest" time="0.365">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByNameZToA_1757227245748.png
+Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByPriceLowToHigh_1757227246159.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC011_sortByPriceHighToLow" classname="tests.ProductTest" time="0.36">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByPriceLowToHigh_1757227246357.png
+Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByPriceHighToLow_1757227246762.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC012_addProductToCart" classname="tests.ProductTest" time="0.382">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC011_sortByPriceHighToLow_1757227246947.png
+Screenshot saved: D:\screenshot\2025-09-07\TC012_addProductToCart_1757227247379.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC015_clickOnProductDetailsPage" classname="tests.ProductTest" time="4.225">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC012_addProductToCart_1757227247584.png
+Screenshot saved: D:\screenshot\2025-09-07\TC015_clickOnProductDetailsPage_1757227251856.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC016_addInvalidProduct" classname="tests.ProductTest" time="10.05">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC015_clickOnProductDetailsPage_1757227251969.png
+]]></system-out>
+  </testcase>
+  <testcase name="testAddProductToCart" classname="tests.CartTest" time="0.276">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\TC016_addInvalidProduct_1757227262247.png
+Screenshot saved: D:\screenshot\2025-09-07\LoginSuccessful_1757227262920.png
+Screenshot saved: D:\screenshot\2025-09-07\ProductAddedToCart_1757227263198.png
+]]></system-out>
+  </testcase>
+  <testcase name="testRemoveProductFromCart" classname="tests.CartTest" time="0.246">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\ProductRemovedFromCart_1757227263450.png
+]]></system-out>
+  </testcase>
+  <testcase name="testContinueShopping" classname="tests.CartTest" time="0.211">
+    <system-out><![CDATA[Screenshot saved: D:\screenshot\2025-09-07\testContinueShopping_1757227263662.png
+]]></system-out>
+  </testcase>
+  <testcase name="testProceedToCheckout" classname="tests.CartTest" time="0.244">
+    <system-out><![CDATA[Current URL before checkout: https://www.saucedemo.com/checkout-step-one.html
+Screenshot saved: D:\screenshot\2025-09-07\testProceedToCheckout_1757227263910.png
+]]></system-out>
+  </testcase>
+  <testcase name="TC020_navigateToCheckoutPage" classname="tests.CheckoutTest" time="0.032"/>
+  <testcase name="TC022_checkoutWithMissingRequiredFields" classname="tests.CheckoutTest" time="0.323"/>
+  <testcase name="TC021_checkoutWithValidInformation" classname="tests.CheckoutTest" time="0.378"/>
+</testsuite>

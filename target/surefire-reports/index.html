@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MySuite" class="navigator-link">
+              <span class="suite-name border-passed">MySuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MySuite" class="navigator-link ">
+                    <span>D:\Capstone Project\SauceDemo-capstone-project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MySuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MySuite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MySuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MySuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MySuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MySuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">23 methods,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MySuite" class="hide-methods passed suite-MySuite"> (hide)</a> <!-- hide-methods passed suite-MySuite -->
+                      <a href="#" panel-name="suite-MySuite" class="show-methods passed suite-MySuite"> (show)</a> <!-- show-methods passed suite-MySuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MySuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC009_TC010_verifyProductListDisplay">TC009_TC010_verifyProductListDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC011_sortByNameAToZ">TC011_sortByNameAToZ</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC011_sortByNameZToA">TC011_sortByNameZToA</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC011_sortByPriceHighToLow">TC011_sortByPriceHighToLow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC011_sortByPriceLowToHigh">TC011_sortByPriceLowToHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC012_addProductToCart">TC012_addProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC015_clickOnProductDetailsPage">TC015_clickOnProductDetailsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.ProductTest" class="method navigator-link" hash-for-method="TC016_addInvalidProduct">TC016_addInvalidProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="TC020_navigateToCheckoutPage">TC020_navigateToCheckoutPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="TC021_checkoutWithValidInformation">TC021_checkoutWithValidInformation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CheckoutTest" class="method navigator-link" hash-for-method="TC022_checkoutWithMissingRequiredFields">TC022_checkoutWithMissingRequiredFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testAddProductToCart">testAddProductToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testContinueShopping">testContinueShopping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testEmptyPassword">testEmptyPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testEmptyUsername">testEmptyUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testEmptyUsernameAndPassword">testEmptyUsernameAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidPassword">testInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testInvalidUsername">testInvalidUsername</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLockedOutUser">testLockedOutUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testProblemUser">testProblemUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testProceedToCheckout">testProceedToCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.CartTest" class="method navigator-link" hash-for-method="testRemoveProductFromCart">testRemoveProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MySuite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MySuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MySuite" class="panel MySuite">
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductToCart">
+                  </a> <!-- testAddProductToCart -->
+                  <span class="method-name">testAddProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testContinueShopping">
+                  </a> <!-- testContinueShopping -->
+                  <span class="method-name">testContinueShopping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProceedToCheckout">
+                  </a> <!-- testProceedToCheckout -->
+                  <span class="method-name">testProceedToCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveProductFromCart">
+                  </a> <!-- testRemoveProductFromCart -->
+                  <span class="method-name">testRemoveProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC020_navigateToCheckoutPage">
+                  </a> <!-- TC020_navigateToCheckoutPage -->
+                  <span class="method-name">TC020_navigateToCheckoutPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC021_checkoutWithValidInformation">
+                  </a> <!-- TC021_checkoutWithValidInformation -->
+                  <span class="method-name">TC021_checkoutWithValidInformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC022_checkoutWithMissingRequiredFields">
+                  </a> <!-- TC022_checkoutWithMissingRequiredFields -->
+                  <span class="method-name">TC022_checkoutWithMissingRequiredFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyPassword">
+                  </a> <!-- testEmptyPassword -->
+                  <span class="method-name">testEmptyPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyUsername">
+                  </a> <!-- testEmptyUsername -->
+                  <span class="method-name">testEmptyUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEmptyUsernameAndPassword">
+                  </a> <!-- testEmptyUsernameAndPassword -->
+                  <span class="method-name">testEmptyUsernameAndPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPassword">
+                  </a> <!-- testInvalidPassword -->
+                  <span class="method-name">testInvalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidUsername">
+                  </a> <!-- testInvalidUsername -->
+                  <span class="method-name">testInvalidUsername</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLockedOutUser">
+                  </a> <!-- testLockedOutUser -->
+                  <span class="method-name">testLockedOutUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProblemUser">
+                  </a> <!-- testProblemUser -->
+                  <span class="method-name">testProblemUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+          <div class="suite-MySuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC009_TC010_verifyProductListDisplay">
+                  </a> <!-- TC009_TC010_verifyProductListDisplay -->
+                  <span class="method-name">TC009_TC010_verifyProductListDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011_sortByNameAToZ">
+                  </a> <!-- TC011_sortByNameAToZ -->
+                  <span class="method-name">TC011_sortByNameAToZ</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011_sortByNameZToA">
+                  </a> <!-- TC011_sortByNameZToA -->
+                  <span class="method-name">TC011_sortByNameZToA</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011_sortByPriceHighToLow">
+                  </a> <!-- TC011_sortByPriceHighToLow -->
+                  <span class="method-name">TC011_sortByPriceHighToLow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011_sortByPriceLowToHigh">
+                  </a> <!-- TC011_sortByPriceLowToHigh -->
+                  <span class="method-name">TC011_sortByPriceLowToHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC012_addProductToCart">
+                  </a> <!-- TC012_addProductToCart -->
+                  <span class="method-name">TC012_addProductToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC015_clickOnProductDetailsPage">
+                  </a> <!-- TC015_clickOnProductDetailsPage -->
+                  <span class="method-name">TC015_clickOnProductDetailsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC016_addInvalidProduct">
+                  </a> <!-- TC016_addInvalidProduct -->
+                  <span class="method-name">TC016_addInvalidProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MySuite-class-passed -->
+        </div> <!-- panel MySuite -->
+        <div panel-name="test-xml-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Capstone Project\SauceDemo-capstone-project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MySuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SauceDemo Website Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.ProductTest&quot;/&gt;
+      &lt;class name=&quot;tests.CartTest&quot;/&gt;
+      &lt;class name=&quot;tests.CheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SauceDemo Website Tests --&gt;
+&lt;/suite&gt; &lt;!-- MySuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SauceDemo Website Tests (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MySuite');
+function tableData_MySuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(23);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC016_addInvalidProduct')
+data.setCell(0, 2, 'tests.ProductTest')
+data.setCell(0, 3, 10048);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC015_clickOnProductDetailsPage')
+data.setCell(1, 2, 'tests.ProductTest')
+data.setCell(1, 3, 4225);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC009_TC010_verifyProductListDisplay')
+data.setCell(2, 2, 'tests.ProductTest')
+data.setCell(2, 3, 2819);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testProblemUser')
+data.setCell(3, 2, 'tests.LoginTest')
+data.setCell(3, 3, 522);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC011_sortByNameAToZ')
+data.setCell(4, 2, 'tests.ProductTest')
+data.setCell(4, 3, 439);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testEmptyUsername')
+data.setCell(5, 2, 'tests.LoginTest')
+data.setCell(5, 3, 402);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC012_addProductToCart')
+data.setCell(6, 2, 'tests.ProductTest')
+data.setCell(6, 3, 384);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC021_checkoutWithValidInformation')
+data.setCell(7, 2, 'tests.CheckoutTest')
+data.setCell(7, 3, 378);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC011_sortByNameZToA')
+data.setCell(8, 2, 'tests.ProductTest')
+data.setCell(8, 3, 368);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInvalidPassword')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 368);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC011_sortByPriceLowToHigh')
+data.setCell(10, 2, 'tests.ProductTest')
+data.setCell(10, 3, 367);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC011_sortByPriceHighToLow')
+data.setCell(11, 2, 'tests.ProductTest')
+data.setCell(11, 3, 361);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testInvalidUsername')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 338);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC022_checkoutWithMissingRequiredFields')
+data.setCell(13, 2, 'tests.CheckoutTest')
+data.setCell(13, 3, 324);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testValidLogin')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 321);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testLockedOutUser')
+data.setCell(15, 2, 'tests.LoginTest')
+data.setCell(15, 3, 316);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testEmptyPassword')
+data.setCell(16, 2, 'tests.LoginTest')
+data.setCell(16, 3, 296);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testEmptyUsernameAndPassword')
+data.setCell(17, 2, 'tests.LoginTest')
+data.setCell(17, 3, 283);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testAddProductToCart')
+data.setCell(18, 2, 'tests.CartTest')
+data.setCell(18, 3, 277);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testRemoveProductFromCart')
+data.setCell(19, 2, 'tests.CartTest')
+data.setCell(19, 3, 245);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testProceedToCheckout')
+data.setCell(20, 2, 'tests.CartTest')
+data.setCell(20, 3, 244);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testContinueShopping')
+data.setCell(21, 2, 'tests.CartTest')
+data.setCell(21, 3, 209);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC020_navigateToCheckoutPage')
+data.setCell(22, 2, 'tests.CheckoutTest')
+data.setCell(22, 3, 32);
+window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <div id="times-div-MySuite">
+              </div> <!-- times-div-MySuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MySuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">suiteSetup</span>
+                <br/>
+                <span class="ignored-method-name">suiteTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.CheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">suiteTearDown</span>
+                <br/>
+                <span class="ignored-method-name">suiteSetup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">tests.ProductTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">suiteSetup</span>
+                <br/>
+                <span class="ignored-method-name">suiteTearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MySuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">suiteSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">2846 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testProblemUser</span>
+                <span class="method-start">3022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyUsername</span>
+                <span class="method-start">3553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidUsername</span>
+                <span class="method-start">3956 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyPassword</span>
+                <span class="method-start">4294 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidPassword</span>
+                <span class="method-start">4592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testEmptyUsernameAndPassword</span>
+                <span class="method-start">4962 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLockedOutUser</span>
+                <span class="method-start">5246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">5564 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5887 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC009_TC010_verifyProductListDisplay</span>
+                <span class="method-start">7949 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">10966 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC011_sortByNameAToZ</span>
+                <span class="method-start">11030 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">11630 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC011_sortByNameZToA</span>
+                <span class="method-start">11681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">12207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC011_sortByPriceLowToHigh</span>
+                <span class="method-start">12251 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">12817 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC011_sortByPriceHighToLow</span>
+                <span class="method-start">12859 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">13407 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC012_addProductToCart</span>
+                <span class="method-start">13453 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">14042 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC015_clickOnProductDetailsPage</span>
+                <span class="method-start">14089 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">18427 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">TC016_addInvalidProduct</span>
+                <span class="method-start">18533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetAppState</span>
+                <span class="method-start">28705 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28745 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpPages</span>
+                <span class="method-start">28970 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddProductToCart</span>
+                <span class="method-start">29381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemoveProductFromCart</span>
+                <span class="method-start">29664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testContinueShopping</span>
+                <span class="method-start">29911 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testProceedToCheckout</span>
+                <span class="method-start">30123 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpTest</span>
+                <span class="method-start">30369 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">resetToCheckoutForm</span>
+                <span class="method-start">30752 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC020_navigateToCheckoutPage</span>
+                <span class="method-start">30790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">resetToCheckoutForm</span>
+                <span class="method-start">30823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC022_checkoutWithMissingRequiredFields</span>
+                <span class="method-start">30861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">resetToCheckoutForm</span>
+                <span class="method-start">31186 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC021_checkoutWithValidInformation</span>
+                <span class="method-start">31222 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">suiteTearDown</span>
+                <span class="method-start">32101 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

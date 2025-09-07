@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -18,6 +17,7 @@ import base.BaseTest;
 import listeners.TestListener;
 import pages.LoginPage;
 import pages.ProductPage;
+import utils.DriverFactory;
 import utils.ScreenshotUtil;
 
 @Listeners(TestListener.class)
@@ -26,10 +26,12 @@ public class ProductTest extends BaseTest {
     ProductPage productPage;
     LoginPage loginPage;
 
+
     @BeforeClass
     public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        // ✅ Use DriverFactory to initialize WebDriver with all Chrome options
+        driver = DriverFactory.initDriver();
+
         driver.get("https://www.saucedemo.com/");
 
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
@@ -37,9 +39,7 @@ public class ProductTest extends BaseTest {
         driver.findElement(By.id("login-button")).click();
 
         loginPage = new LoginPage(driver);
-
         productPage = new ProductPage(driver);
-        
     }
 
     
