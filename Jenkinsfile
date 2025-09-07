@@ -1,48 +1,43 @@
 pipeline {
-    agent any
+   agent any
+   environment {
+       APP_ENV = 'dev'   // ✅ Good use of environment variable
+   }
+   stages {
+       stage('Clone') {
+           steps {
+               git 'https://github.com/KiranPatil30/SauceDemo-capstone-project.git'  // ✅ Correct Git repo
+           }
+       }
 
-    stages {
-        stage('Checkout') {
-            steps {
-                // Change this to your repo URL or Jenkins configured Git repo
-                git branch: 'main', url: 'https://github.com/KiranPatil30/SauceDemo-capstone-project.git'
-            }
-        }
+       stage('Build') {
+           steps {
+               echo 'Building the project...'
+               bat 'mvn clean install'   // ⚠️ Works only on Windows agents
+           }
+       }
 
-        stage('Build & Test') {
-            steps {
-                // Run Maven clean and test
-                sh 'mvn clean test'
-            }
-        }
+       stage('Test') {
+           steps {
+               echo 'Running tests...'
+               bat 'mvn test'  // ⚠️ Works only on Windows agents
+           }
+       }
 
-        stage('Publish Reports') {
-            steps {
-                // Publish HTML report from cucumber
-                publishHTML([
-                    reportDir: 'target',
-                    reportFiles: 'cucumber-report.html',
-                    reportName: 'Cucumber HTML Report',
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true
-                ])
+       stage('Deploy') {
+           steps {
+               echo "Deploying to ${env.APP_ENV} environment..."
+               // ✅ You can add your deploy logic here
+           }
+       }
+   }
 
-                // Publish JUnit reports (TestNG + Cucumber XML)
-                junit 'target/*.xml'
-            }
-        }
-    }
-
-    post {
-        always {
-            // Archive all cucumber reports and screenshots if you have them
-            archiveArtifacts artifacts: 'target/cucumber-report.*', fingerprint: true
-
-            // Optional: Archive TestNG reports if they exist
-            archiveArtifacts artifacts: 'target/surefire-reports/*.xml', allowEmptyArchive: true
-
-            // Clean workspace after build (optional)
-            cleanWs()
-        }
-    }
+   post {
+       success {
+           echo 'Pipeline completed successfully.'
+       }
+       failure {
+           echo 'Pipeline failed.'
+       }
+   }
 }
