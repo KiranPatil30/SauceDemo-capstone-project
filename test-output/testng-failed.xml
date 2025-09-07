@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [MySuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="SauceDemo Website Tests(failed)">
     <classes>
-      <class name="tests.CheckOutTest">
+      <class name="tests.LoginTest">
         <methods>
+          <include name="testValidLogin"/>
           <include name="suiteSetup"/>
+          <include name="testEmptyPassword"/>
+          <include name="testEmptyUsernameAndPassword"/>
+          <include name="testLockedOutUser"/>
+          <include name="testInvalidPassword"/>
           <include name="suiteTearDown"/>
-          <include name="TC022_checkoutWithMissingRequiredFields"/>
-          <include name="setUpTest"/>
-          <include name="resetToCheckoutForm"/>
+          <include name="testEmptyUsername"/>
+          <include name="testInvalidUsername"/>
+          <include name="testProblemUser"/>
+          <include name="loadLoginPage"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- tests.CheckOutTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- SauceDemo Website Tests(failed) -->
+</suite> <!-- Failed suite [MySuite] -->

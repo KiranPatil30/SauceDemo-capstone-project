@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.CheckOutTest">
+      <class name="tests.CartTest">
         <methods>
           <include name="suiteSetup"/>
+          <include name="testProceedToCheckout"/>
+          <include name="testRemoveProductFromCart"/>
           <include name="suiteTearDown"/>
-          <include name="TC022_checkoutWithMissingRequiredFields"/>
-          <include name="setUpTest"/>
-          <include name="resetToCheckoutForm"/>
+          <include name="testContinueShopping"/>
+          <include name="setUpPages"/>
         </methods>
-      </class> <!-- tests.CheckOutTest -->
+      </class> <!-- tests.CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

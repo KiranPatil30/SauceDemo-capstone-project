@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="77.257" tests="25" skipped="0" failures="0" errors="0">
+<testcase classname="Shopping Cart Functionality" name="User logs in successfully" time="4.407">
+<system-out><![CDATA[
+Given the user is on the login page.........................................passed
+When the user logs in with username "standard_user" and password "secret_sauce".passed
+Then the user should be redirected to the products page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart Functionality" name="User adds a product to the cart" time="2.572">
+<system-out><![CDATA[
+Given the user is logged in.................................................passed
+When the user adds "Sauce Labs Backpack" to the cart........................passed
+And the user navigates to the cart..........................................passed
+Then "Sauce Labs Backpack" should be present in the cart....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart Functionality" name="User removes an item from the cart" time="12.445">
+<system-out><![CDATA[
+Given the user has "Sauce Labs Backpack" in the cart........................passed
+When the user removes "Sauce Labs Backpack" from the cart...................passed
+Then "Sauce Labs Backpack" should not be present in the cart................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart Functionality" name="User continues shopping from the cart" time="2.338">
+<system-out><![CDATA[
+Given the user is on the cart page..........................................passed
+When the user clicks on Continue Shopping...................................passed
+Then the user should be redirected to the products page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart Functionality" name="User proceeds to checkout" time="2.27">
+<system-out><![CDATA[
+Given the user has "Sauce Labs Backpack" in the cart........................passed
+When the user proceeds to checkout..........................................passed
+Then the user should be redirected to the checkout page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Valid login" time="2.359">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "standard_user" and password "secret_sauce"...........passed
+And I click the login button................................................passed
+Then I should be redirected to the inventory page...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Empty username" time="2.273">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "" and password "secret_sauce"........................passed
+And I click the login button................................................passed
+Then I should see the error message "Epic sadface: Username is required"....passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Invalid username" time="2.27">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "invalid-username" and password "secret_sauce"........passed
+And I click the login button................................................passed
+Then I should see the error message "Epic sadface: Username and password do not match any user in this service".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Empty password" time="2.291">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "standard_user" and password "".......................passed
+And I click the login button................................................passed
+Then I should see the error message "Epic sadface: Password is required"....passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Invalid password" time="2.462">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "standard_user" and password "wrong_password".........passed
+And I click the login button................................................passed
+Then I should see the error message "Epic sadface: Username and password do not match any user in this service".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Empty username and password" time="2.423">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "" and password ""....................................passed
+And I click the login button................................................passed
+Then I should see the error message "Epic sadface: Username is required"....passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Locked out user" time="2.676">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "locked_out_user" and password "secret_sauce".........passed
+And I click the login button................................................passed
+Then I should see the error message "Epic sadface: Sorry, this user has been locked out.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Functionality" name="Problem user login" time="2.61">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter username "problem_user" and password "secret_sauce"............passed
+And I click the login button................................................passed
+Then I should be redirected to the inventory page...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC009 Verify product listing page after login" time="2.388">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+Then the product listing should display names and prices....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC010 Verify product names and prices are displayed" time="2.391">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+Then the product listing should display names and prices....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC011 Verify sorting options - Example #1.1" time="2.46">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I sort products by "Name (A to Z)".....................................passed
+Then products should be sorted by "Name (A to Z)"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC011 Verify sorting options - Example #1.2" time="2.7">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I sort products by "Name (Z to A)".....................................passed
+Then products should be sorted by "Name (Z to A)"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC011 Verify sorting options - Example #1.3" time="2.495">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I sort products by "Price (low to high)"...............................passed
+Then products should be sorted by "Price (low to high)".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC011 Verify sorting options - Example #1.4" time="2.379">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I sort products by "Price (high to low)"...............................passed
+Then products should be sorted by "Price (high to low)".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC012 Add a product to the cart" time="2.375">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I add "Sauce Labs Backpack" to the cart................................passed
+Then "Sauce Labs Backpack" should be in the cart............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC013 Remove a product from the cart" time="2.476">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I add "Sauce Labs Backpack" to the cart................................passed
+And I remove "Sauce Labs Backpack" from the cart............................passed
+Then "Sauce Labs Backpack" should not be in the cart........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC014 Add multiple products to the cart - Example #1.1" time="2.477">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I add "Sauce Labs Backpack" to the cart................................passed
+Then "Sauce Labs Backpack" should be in the cart............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC014 Add multiple products to the cart - Example #1.2" time="2.466">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I add "Sauce Labs Bike Light" to the cart..............................passed
+Then "Sauce Labs Bike Light" should be in the cart..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC014 Add multiple products to the cart - Example #1.3" time="2.507">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I add "Sauce Labs Bolt T-Shirt" to the cart............................passed
+Then "Sauce Labs Bolt T-Shirt" should be in the cart........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product page functionality" name="TC015 Click on a product to go to its details page" time="6.417">
+<system-out><![CDATA[
+Given I am logged in as a valid user........................................passed
+When I click on the "Sauce Labs Backpack" product...........................passed
+Then I should see the details page for "Sauce Labs Backpack"................passed
+]]></system-out>
+</testcase>
+</testsuite>

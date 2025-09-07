@@ -42,14 +42,7 @@ public class ProductTest extends BaseTest {
         productPage = new ProductPage(driver);
     }
 
-    
-    @AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
-    
+
 
 
  @AfterMethod
@@ -58,13 +51,13 @@ public class ProductTest extends BaseTest {
      driver.navigate().refresh(); 
  }
     @Test(priority = 1)
-    public void TC009_TC010_verifyProductListDisplay() throws InterruptedException {
+    public void verifyProductListDisplay() throws InterruptedException {
         Assert.assertTrue(productPage.allProductsHaveDetails(), "Not all product elements are properly displayed.");
         ScreenshotUtil.takeScreenshot(driver, "TC009_TC010_verifyProductListDisplay");
     }
 
     @Test(priority = 2)
-    public void TC011_sortByNameAToZ() {
+    public void sortByNameAToZ() {
         productPage.selectSortOption("Name (A to Z)");
         List<String> actual = productPage.getAllProductNames();
         List<String> expected = new ArrayList<>(actual);
@@ -75,7 +68,7 @@ public class ProductTest extends BaseTest {
     }
 
     @Test(priority = 3)
-    public void TC011_sortByNameZToA() {
+    public void sortByNameZToA() {
         productPage.selectSortOption("Name (Z to A)");
         List<String> actual = productPage.getAllProductNames();
         List<String> expected = new ArrayList<>(actual);
@@ -86,7 +79,7 @@ public class ProductTest extends BaseTest {
     }
 
     @Test(priority = 4)
-    public void TC011_sortByPriceLowToHigh() {
+    public void sortByPriceLowToHigh() {
         productPage.selectSortOption("Price (low to high)");
         List<Double> actual = productPage.getAllProductPrices();
         List<Double> expected = new ArrayList<>(actual);
@@ -97,7 +90,7 @@ public class ProductTest extends BaseTest {
     }
 
     @Test(priority = 5)
-    public void TC011_sortByPriceHighToLow() {
+    public void sortByPriceHighToLow() {
         productPage.selectSortOption("Price (high to low)");
         List<Double> actual = productPage.getAllProductPrices();
         List<Double> expected = new ArrayList<>(actual);
@@ -109,7 +102,7 @@ public class ProductTest extends BaseTest {
 
  // Change this test's priority from 7 to 6
     @Test(priority = 6)
-    public void TC012_addProductToCart() throws InterruptedException {
+    public void addProductToCart() throws InterruptedException {
         productPage.addProductToCart("Sauce Labs Backpack");
         Assert.assertEquals(productPage.getAddToCartButtonText("Sauce Labs Backpack"), "Remove");
         ScreenshotUtil.takeScreenshot(driver, "TC012_addProductToCart");
@@ -118,7 +111,7 @@ public class ProductTest extends BaseTest {
 
 
     @Test(priority = 9)
-    public void TC015_clickOnProductDetailsPage() throws InterruptedException {
+    public void clickOnProductDetailsPage() throws InterruptedException {
         productPage.clickOnProduct("Sauce Labs Backpack");
         Assert.assertEquals(productPage.getProductDetailName(), "Sauce Labs Backpack", "Incorrect product detail page");
         ScreenshotUtil.takeScreenshot(driver, "TC015_clickOnProductDetailsPage");
@@ -126,9 +119,10 @@ public class ProductTest extends BaseTest {
     }
 
     @Test(priority = 10, expectedExceptions = RuntimeException.class)
-    public void TC016_addInvalidProduct() throws InterruptedException {
+    public void addInvalidProduct() throws InterruptedException {
         productPage.addProductToCart("Non Existent Product");
         ScreenshotUtil.takeScreenshot(driver, "TC016_addInvalidProduct");
 
     }
+
 }

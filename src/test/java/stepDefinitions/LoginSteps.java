@@ -10,15 +10,15 @@ import utils.ScreenshotUtil;
 
 public class LoginSteps {
 
-    WebDriver driver;
-    LoginPage loginPage;
+    private WebDriver driver;
+    private LoginPage loginPage;
 
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
-        driver = DriverFactory.getDriver(); 
-        loginPage = new LoginPage(driver);
+        driver = DriverFactory.getDriver();
         driver.get("https://www.saucedemo.com/");
-        ScreenshotUtil.takeScreenshot(driver, "LoginPage");
+        loginPage = new LoginPage(driver);
+        ScreenshotUtil.takeScreenshot(driver, "LoginPage_Loaded");
     }
 
     @When("I enter username {string} and password {string}")
@@ -34,15 +34,14 @@ public class LoginSteps {
 
     @Then("I should be redirected to the inventory page")
     public void i_should_be_redirected_to_the_inventory_page() {
-        String currentUrl = loginPage.isInventoryPageDisplayed();
-        Assert.assertEquals(currentUrl, "https://www.saucedemo.com/inventory.html");
+        Assert.assertTrue(loginPage.isInventoryPageDisplayed(), "User is not on the inventory page");
         ScreenshotUtil.takeScreenshot(driver, "InventoryPage");
     }
 
     @Then("I should see the error message {string}")
     public void i_should_see_the_error_message(String expectedError) {
         String actualError = loginPage.getErrorMessage().trim();
-        Assert.assertEquals(actualError, expectedError);
+        Assert.assertEquals(actualError, expectedError, "Error message mismatch");
         ScreenshotUtil.takeScreenshot(driver, "LoginError");
     }
 }

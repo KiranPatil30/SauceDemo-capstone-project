@@ -1,13 +1,17 @@
 package listeners;
 
-import com.aventstack.extentreports.*;
-import com.aventstack.extentreports.Status;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
+import utils.DriverFactory;
 import utils.ExtentManager;
 import utils.ScreenshotUtil;
-import utils.DriverFactory;
 
 public class TestListener implements ITestListener {
 
@@ -31,15 +35,48 @@ public class TestListener implements ITestListener {
         test.set(extentTest);
     }
 
+//    @Override
+//    public void onTestSuccess(ITestResult result) {
+//        test.get().log(Status.PASS, "Test Passed");
+//        try {
+//            String screenshotPath = ScreenshotUtil.takeScreenshot(DriverFactory.getDriver(), result.getMethod().getMethodName());
+//            test.get().addScreenCaptureFromPath(screenshotPath);
+//        } catch (Exception e) {
+//            test.get().log(Status.WARNING, "Failed to attach success screenshot: " + e.getMessage());
+//        }
+//    }
+    
+//    @Override
+//    public void onTestSuccess(ITestResult result) {
+//        test.get().log(Status.PASS, "Test Passed");
+//        WebDriver driver = DriverFactory.getDriver();
+//
+//        if (driver == null) {
+//            test.get().log(Status.WARNING, "Skipped attaching screenshot: WebDriver is null.");
+//            return;
+//        }
+//
+//        try {
+//            String screenshotPath = ScreenshotUtil.takeScreenshot(driver, result.getMethod().getMethodName());
+//            if (screenshotPath != null) {
+//                test.get().addScreenCaptureFromPath(screenshotPath);
+//            }
+//        } catch (Exception e) {
+//            test.get().log(Status.WARNING, "Failed to attach success screenshot: " + e.getMessage());
+//        }
+//    }
+
     @Override
     public void onTestSuccess(ITestResult result) {
-        test.get().log(Status.PASS, "Test Passed");
-        try {
-            String screenshotPath = ScreenshotUtil.takeScreenshot(DriverFactory.getDriver(), result.getMethod().getMethodName());
+        WebDriver driver = DriverFactory.getDriver();
+        if (driver != null) {
+            String screenshotPath = ScreenshotUtil.takeScreenshot(driver, result.getMethod().getMethodName());
             test.get().addScreenCaptureFromPath(screenshotPath);
-        } catch (Exception e) {
-            test.get().log(Status.WARNING, "Failed to attach success screenshot: " + e.getMessage());
+        } else {
+            test.get().log(Status.WARNING, "Driver was null, could not capture screenshot.");
         }
+
+        test.get().log(Status.PASS, "Test Passed");
     }
 
     @Override

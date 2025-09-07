@@ -6,17 +6,22 @@
   </listeners>
   <test thread-count="5" name="SauceDemo Website Tests(failed)">
     <classes>
-      <class name="tests.ProductTest">
+      <class name="tests.LoginTest">
         <methods>
+          <include name="testValidLogin"/>
           <include name="suiteSetup"/>
-          <include name="setUp"/>
-          <include name="resetAppState"/>
+          <include name="testEmptyPassword"/>
+          <include name="testEmptyUsernameAndPassword"/>
+          <include name="testLockedOutUser"/>
+          <include name="testInvalidPassword"/>
           <include name="suiteTearDown"/>
-          <include name="TC015_clickOnProductDetailsPage"/>
-          <include name="TC012_addProductToCart"/>
-          <include name="tearDown"/>
+          <include name="testEmptyUsername"/>
+          <include name="testInvalidUsername"/>
+          <include name="testProblemUser"/>
+          <include name="loadLoginPage"/>
+          <include name="setupTest"/>
         </methods>
-      </class> <!-- tests.ProductTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- SauceDemo Website Tests(failed) -->
 </suite> <!-- Failed suite [MySuite] -->

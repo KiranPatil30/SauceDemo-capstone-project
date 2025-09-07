@@ -43,8 +43,13 @@ public class DriverFactory {
     public static void quitDriver() {
         WebDriver webDriver = driver.get();
         if (webDriver != null) {
+            System.out.println("Closing browser...");
             webDriver.quit();
             driver.remove();
+        } else {
+            System.out.println("Driver was already null.");
         }
     }
+
+    
 }
