@@ -1,3 +1,4 @@
+stepDefinitions\CheckoutSteps.class
 tests\CartTest.class
 stepDefinitions\LoginSteps.class
 pages\ProductPage.class
@@ -14,3 +15,4 @@ base\BaseTest.class
 stepDefinitions\Hooks.class
 com\example\SauceDemo_capstone_project\AppTest.class
 pages\CheckoutPage.class
+integration\IntegrationTest.class

@@ -106,10 +106,10 @@ public class ProductTest extends BaseTest {
 
     }
 
-    @Test(priority = 8)
-    public void addInvalidProduct() throws InterruptedException {
+    @Test(priority = 8, expectedExceptions = RuntimeException.class)
+    public void addInvalidProduct() {
         productPage.addProductToCart("Non Existent Product");
-
     }
+
 
 }

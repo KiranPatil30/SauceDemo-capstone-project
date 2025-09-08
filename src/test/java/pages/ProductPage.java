@@ -62,10 +62,15 @@ public class ProductPage {
         By buttonLocator = By.xpath(
             "//div[@class='inventory_item']//div[text()='" + productName + "']/ancestor::div[@class='inventory_item']//button"
         );
-        WebElement addButton = wait.until(ExpectedConditions.elementToBeClickable(buttonLocator));
-        addButton.click();
-        wait.until(ExpectedConditions.textToBePresentInElementLocated(buttonLocator, "Remove"));
+        try {
+            WebElement addButton = wait.until(ExpectedConditions.elementToBeClickable(buttonLocator));
+            addButton.click();
+            wait.until(ExpectedConditions.textToBePresentInElementLocated(buttonLocator, "Remove"));
+        } catch (TimeoutException e) {
+            throw new RuntimeException("Product '" + productName + "' not found on product page.", e);
+        }
     }
+
 
     public void removeProductFromCart(String productName) {
         try {
