@@ -1,7 +1,5 @@
 Feature: Login Functionality
-  As a user of SauceDemo
-  I want to be able to log in with valid and invalid credentials
-  So that I can access or be prevented from accessing the inventory page
+
 
   Scenario: Valid login
     Given I am on the login page

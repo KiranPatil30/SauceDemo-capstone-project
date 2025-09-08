@@ -1,7 +1,6 @@
 package tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
@@ -10,14 +9,12 @@ import org.testng.annotations.Test;
 import base.BaseTest;
 import listeners.TestListener;
 import pages.LoginPage;
+import utils.ConfigReader;
 import utils.DriverFactory;
 import utils.ScreenshotUtil;
 
 @Listeners(TestListener.class)
 public class LoginTest extends BaseTest {
-
-    private static final String BASE_URL = "https://www.saucedemo.com/";
-    private static final String INVENTORY_URL_FRAGMENT = "/inventory.html";
 
     private LoginPage loginPage;
 
@@ -29,7 +26,7 @@ public class LoginTest extends BaseTest {
 
     @BeforeMethod
     public void loadLoginPage() {
-        driver.get(BASE_URL);
+    	 driver.get(ConfigReader.get("baseUrl")); 
         ScreenshotUtil.takeScreenshot(driver, "LoginPage_Loaded");
     }
 
@@ -40,14 +37,12 @@ public class LoginTest extends BaseTest {
     private void verifyErrorMessage(String expectedErrorMessage, String screenshotName) {
         String actualError = loginPage.getErrorMessage();
         Assert.assertEquals(actualError, expectedErrorMessage);
-        ScreenshotUtil.takeScreenshot(driver, screenshotName);
     }
 
     @Test(priority = 8, groups = "login")
     public void testValidLogin() {
         login("standard_user", "secret_sauce");
         Assert.assertTrue(loginPage.isInventoryPageDisplayed(), "Inventory page not displayed!");
-        ScreenshotUtil.takeScreenshot(driver, "testValidLogin");
     }
 
     @Test(priority = 3)
@@ -90,7 +85,6 @@ public class LoginTest extends BaseTest {
     public void testProblemUser() {
         login("problem_user", "secret_sauce");
         Assert.assertTrue(loginPage.isInventoryPageDisplayed(), "Inventory page not displayed!");
-        ScreenshotUtil.takeScreenshot(driver, "testProblemUser");
     }
     
 }

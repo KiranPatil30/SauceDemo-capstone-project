@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import utils.ConfigReader;
 import utils.DriverFactory;
 
 public class BaseTest {
@@ -14,7 +15,7 @@ public class BaseTest {
   
 
         driver = DriverFactory.initDriver();
-        driver.get("https://www.saucedemo.com/"); 
+        driver.get(ConfigReader.get("baseUrl")); 
 
     }
 

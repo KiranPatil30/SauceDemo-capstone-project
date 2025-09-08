@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import utils.ConfigReader;
+
 public class CheckoutPage {
     WebDriver driver;
 
@@ -21,7 +23,7 @@ public class CheckoutPage {
     }
 
     public void loginAndAddToCartToCheckout(String username, String password) {
-        driver.get("https://www.saucedemo.com");
+        driver.get(ConfigReader.get("baseUrl"));
         new LoginPage(driver).login(username, password);
 
         ProductPage productPage = new ProductPage(driver);

@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utils.ConfigReader;
+
 public class CartPage {
 
     private WebDriver driver;
@@ -23,7 +25,7 @@ public class CartPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     public void loginToProductPageToCartPage(String username, String password, String productName) {
-        driver.get("https://www.saucedemo.com/");
+        driver.get(ConfigReader.get("baseUrl"));
         driver.findElement(By.id("user-name")).sendKeys(username);
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.id("login-button")).click();

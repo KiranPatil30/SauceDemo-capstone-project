@@ -99,14 +99,14 @@ public class ProductTest extends BaseTest {
 
 
 
-    @Test(priority = 9)
+    @Test(priority = 7)
     public void clickOnProductDetailsPage() {
         productPage.clickOnProduct("Sauce Labs Backpack");
         Assert.assertEquals(productPage.getProductDetailName(), "Sauce Labs Backpack", "Incorrect product detail page");
 
     }
 
-    @Test(priority = 10, expectedExceptions = RuntimeException.class)
+    @Test(priority = 8)
     public void addInvalidProduct() throws InterruptedException {
         productPage.addProductToCart("Non Existent Product");
 

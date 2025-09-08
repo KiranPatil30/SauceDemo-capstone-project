@@ -23,7 +23,7 @@ public class ScreenshotUtil {
 	    File source = ts.getScreenshotAs(OutputType.FILE);
 
 	    String date = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-	    String dir = "D:/screenshot/" + date + "/";
+	    String dir = System.getProperty("user.dir") + "/reports/screenshots/" + date + "/";
 	    String fileName = testName + "_" + System.currentTimeMillis() + ".png";
 
 	    try {
