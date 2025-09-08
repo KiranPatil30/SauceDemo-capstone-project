@@ -35,37 +35,6 @@ public class TestListener implements ITestListener {
         test.set(extentTest);
     }
 
-//    @Override
-//    public void onTestSuccess(ITestResult result) {
-//        test.get().log(Status.PASS, "Test Passed");
-//        try {
-//            String screenshotPath = ScreenshotUtil.takeScreenshot(DriverFactory.getDriver(), result.getMethod().getMethodName());
-//            test.get().addScreenCaptureFromPath(screenshotPath);
-//        } catch (Exception e) {
-//            test.get().log(Status.WARNING, "Failed to attach success screenshot: " + e.getMessage());
-//        }
-//    }
-    
-//    @Override
-//    public void onTestSuccess(ITestResult result) {
-//        test.get().log(Status.PASS, "Test Passed");
-//        WebDriver driver = DriverFactory.getDriver();
-//
-//        if (driver == null) {
-//            test.get().log(Status.WARNING, "Skipped attaching screenshot: WebDriver is null.");
-//            return;
-//        }
-//
-//        try {
-//            String screenshotPath = ScreenshotUtil.takeScreenshot(driver, result.getMethod().getMethodName());
-//            if (screenshotPath != null) {
-//                test.get().addScreenCaptureFromPath(screenshotPath);
-//            }
-//        } catch (Exception e) {
-//            test.get().log(Status.WARNING, "Failed to attach success screenshot: " + e.getMessage());
-//        }
-//    }
-
     @Override
     public void onTestSuccess(ITestResult result) {
         WebDriver driver = DriverFactory.getDriver();
@@ -93,10 +62,5 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestSkipped(ITestResult result) {
         test.get().log(Status.SKIP, "Test Skipped");
-    }
-
-    @Override
-    public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        // Optional
     }
 }

@@ -24,12 +24,12 @@ public class CheckoutTest extends BaseTest {
     }
 
     @Test(priority = 1)
-    public void TC020_navigateToCheckoutPage() {
+    public void navigateToCheckoutPage() {
         Assert.assertTrue(driver.getCurrentUrl().contains("checkout-step-one"), "User is not on checkout page");
     }
 
     @Test(priority = 3)
-    public void TC021_checkoutWithValidInformation() {
+    public void checkoutWithValidInformation() {
         checkoutPage.enterFirstName("John");
         checkoutPage.enterLastName("Doe");
         checkoutPage.enterPostalCode("12345");
@@ -47,11 +47,9 @@ public class CheckoutTest extends BaseTest {
     }
 
     @Test(priority = 2)
-    public void TC022_checkoutWithMissingRequiredFields() {
-//        driver.navigate().back(); // Go back to checkout-step-one
-//        driver.navigate().refresh(); // Reset form
+    public void checkoutWithMissingRequiredFields() {
 
-        checkoutPage.enterFirstName(""); // Empty first name
+        checkoutPage.enterFirstName(""); 
         checkoutPage.enterLastName("Doe");
         checkoutPage.enterPostalCode("12345");
         checkoutPage.clickContinue();

@@ -23,11 +23,12 @@
     </dependency>
     
      <!-- Selenium Java -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.21.0</version> <!-- Use latest if available -->
-    </dependency>
+   <dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-java</artifactId>
+  <version>4.23.0</version>
+</dependency>
+
 	<!-- ExtentReports -->
 	
 	<dependency>

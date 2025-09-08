@@ -1,28 +1,24 @@
 package base;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import utils.DriverFactory;
 
 public class BaseTest {
     protected static WebDriver driver;
 
-    @BeforeSuite
+    @BeforeClass
     public void suiteSetup() {
   
 
-         driver = DriverFactory.initDriver();
+        driver = DriverFactory.initDriver();
         driver.get("https://www.saucedemo.com/"); 
 
     }
 
-    @AfterSuite
+    @AfterClass
     public void suiteTearDown() {
         if (driver != null) {
             DriverFactory.quitDriver();

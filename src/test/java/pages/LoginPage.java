@@ -18,7 +18,6 @@ public class LoginPage {
     private By loginButton = By.id("login-button");
     private By errorMessage = By.xpath("//h3[contains(text(),'Epic sadface')]");
 
-    // Constructor
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -53,7 +52,7 @@ public class LoginPage {
             wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage));
             return driver.findElement(errorMessage).getText();
         } catch (TimeoutException e) {
-            return "";  // No error message shown
+            return "";  
         }
     }
 

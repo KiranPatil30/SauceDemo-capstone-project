@@ -8,6 +8,7 @@
     
      <test name="SauceDemo Website Tests">
         <classes>
+         <class name="integration.IntegrationTest"/>
             <class name="tests.LoginTest"/>
             <class name="tests.ProductTest"/>
              <class name="tests.CartTest"/>

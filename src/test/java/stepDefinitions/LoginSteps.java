@@ -16,10 +16,10 @@ public class LoginSteps {
     @Given("I am on the login page")
     public void i_am_on_the_login_page() {
         driver = DriverFactory.getDriver();
-        driver.get("https://www.saucedemo.com/");
         loginPage = new LoginPage(driver);
-        ScreenshotUtil.takeScreenshot(driver, "LoginPage_Loaded");
+        driver.get("https://www.saucedemo.com");
     }
+
 
     @When("I enter username {string} and password {string}")
     public void i_enter_username_and_password(String username, String password) {

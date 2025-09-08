@@ -22,17 +22,12 @@ public class CheckoutPage {
 
     public void loginAndAddToCartToCheckout(String username, String password) {
         driver.get("https://www.saucedemo.com");
-//        driver.findElement(By.id("user-name")).sendKeys(username);
-//        driver.findElement(By.id("password")).sendKeys(password);
-//        driver.findElement(By.id("login-button")).click();
         new LoginPage(driver).login(username, password);
 
-        // Add product to cart
         ProductPage productPage = new ProductPage(driver);
         productPage.addProductToCart("Sauce Labs Backpack");
         productPage.openCart();
 
-        // Click checkout from cart
         CartPage cartPage = new CartPage(driver);
         cartPage.clickCheckout();
     }
@@ -41,7 +36,6 @@ public class CheckoutPage {
         driver.findElement(firstName).clear();
         driver.findElement(firstName).sendKeys(fname);
     }
-
     public void enterLastName(String lname) {
         driver.findElement(lastName).clear();
         driver.findElement(lastName).sendKeys(lname);
@@ -50,6 +44,12 @@ public class CheckoutPage {
     public void enterPostalCode(String zip) {
         driver.findElement(postalCode).clear();
         driver.findElement(postalCode).sendKeys(zip);
+    }
+    public void fillDetails(String fname, String lname,String zip) {
+    	enterFirstName(fname);
+    	enterLastName(lname);
+    	enterPostalCode(zip);
+    	
     }
 
     public void clickContinue() {
@@ -70,6 +70,10 @@ public class CheckoutPage {
 
     public boolean isOnCheckoutOverview() {
         return driver.getCurrentUrl().contains("checkout-step-two");
+    }
+
+    public void clickOnFinish() {
+        driver.findElement(By.id("finish")).click();
     }
 
     public boolean isCheckoutComplete() {

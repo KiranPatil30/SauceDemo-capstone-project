@@ -6,23 +6,13 @@
   </listeners>
   <test thread-count="5" name="SauceDemo Website Tests(failed)">
     <classes>
-      <class name="tests.CheckoutTest">
-        <methods>
-          <include name="TC022_checkoutWithMissingRequiredFields"/>
-          <include name="TC021_checkoutWithValidInformation"/>
-          <include name="suiteSetup"/>
-          <include name="setUpTest"/>
-          <include name="suiteTearDown"/>
-          <include name="resetToCheckoutForm"/>
-          <include name="TC020_navigateToCheckoutPage"/>
-        </methods>
-      </class> <!-- tests.CheckoutTest -->
       <class name="tests.CartTest">
         <methods>
           <include name="suiteSetup"/>
-          <include name="testRemoveProductFromCart"/>
+          <include name="testProceedToCheckout"/>
           <include name="suiteTearDown"/>
-          <include name="tearDown"/>
+          <include name="testContinueShopping"/>
+          <include name="testRemoveProductFromCart"/>
           <include name="setUpPages"/>
           <include name="testAddProductToCart"/>
         </methods>

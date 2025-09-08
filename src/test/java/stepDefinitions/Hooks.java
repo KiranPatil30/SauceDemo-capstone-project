@@ -8,11 +8,11 @@ public class Hooks {
 
     @Before
     public void setUp() {
-        DriverFactory.initDriver(); // ✅ sets up driver before each scenario
+        DriverFactory.initDriver();
     }
 
     @After
     public void tearDown() {
-        DriverFactory.quitDriver(); // ✅ quits driver after each scenario
+        DriverFactory.quitDriver(); 
     }
 }

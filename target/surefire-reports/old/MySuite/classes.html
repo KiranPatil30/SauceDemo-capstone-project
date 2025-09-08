@@ -16,11 +16,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>testEmptyUsernameAndPassword</td>
+<td>testLockedOutUser</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testLockedOutUser</td>
+<td>testEmptyUsernameAndPassword</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -32,10 +32,6 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>testInvalidUsername</td>
-<td>&nbsp;</td></tr>
-<tr>
-<td>&nbsp;</td>
 <td>testProblemUser</td>
 <td>&nbsp;</td></tr>
 <tr>
@@ -43,8 +39,16 @@
 <td>testEmptyPassword</td>
 <td>&nbsp;</td></tr>
 <tr>
+<td>&nbsp;</td>
+<td>testInvalidUsername</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteSetup</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>setupTest</td>
@@ -62,6 +66,40 @@
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteTearDown</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>integration.IntegrationTest</td>
+<td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@Test</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>testCompleteUserJourney</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteSetup</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td align='center' colspan='3'>@BeforeMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterMethod</td>
+</tr>
+<tr>
+<td align='center' colspan='3'>@AfterClass</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteTearDown</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>tests.CartTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
@@ -89,6 +127,10 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
+<td>suiteSetup</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
 <td>setUpPages</td>
 <td>&nbsp;</td></tr>
 <tr>
@@ -101,6 +143,10 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
+<td>&nbsp;</td>
+<td>suiteTearDown</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td>tests.ProductTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -108,11 +154,11 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>addInvalidProduct</td>
+<td>sortByNameAToZ</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>sortByNameAToZ</td>
+<td>addInvalidProduct</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -128,11 +174,11 @@
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>sortByPriceLowToHigh</td>
+<td>addProductToCart</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>addProductToCart</td>
+<td>sortByPriceLowToHigh</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
@@ -141,6 +187,10 @@
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteSetup</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>setUp</td>
@@ -159,6 +209,10 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
+<td>&nbsp;</td>
+<td>suiteTearDown</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td>tests.CheckoutTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
@@ -166,19 +220,23 @@
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC022_checkoutWithMissingRequiredFields</td>
+<td>checkoutWithValidInformation</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC020_navigateToCheckoutPage</td>
+<td>checkoutWithMissingRequiredFields</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
-<td>TC021_checkoutWithValidInformation</td>
+<td>navigateToCheckoutPage</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteSetup</td>
+<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>setUpTest</td>
@@ -196,4 +254,8 @@
 <tr>
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
+<tr>
+<td>&nbsp;</td>
+<td>suiteTearDown</td>
+<td>&nbsp;</td></tr>
 </table>

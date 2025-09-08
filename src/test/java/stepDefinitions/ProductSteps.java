@@ -29,7 +29,6 @@ public class ProductSteps {
 	    driver.findElement(By.id("password")).sendKeys("secret_sauce");
 	    driver.findElement(By.id("login-button")).click();
 
-	    // Optional assertion
 	    Assert.assertTrue(driver.getCurrentUrl().contains("inventory"), "Login failed or did not redirect to inventory page");
 	}
 

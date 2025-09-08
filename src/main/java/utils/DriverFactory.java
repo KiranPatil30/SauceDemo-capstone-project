@@ -1,3 +1,4 @@
+
 package utils;
 
 import java.time.Duration;
@@ -11,46 +12,45 @@ public class DriverFactory {
 
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
+
+    public static WebDriver initDriver() {
+        if (driver.get() == null) {
+            System.out.println("[DriverFactory] Initializing ChromeDriver for thread: ");
+
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--incognito");
+            options.addArguments("--disable-notifications");
+            options.addArguments("--disable-extensions");
+            options.addArguments("--disable-save-password-bubble");
+            options.addArguments("--disable-infobars");
+
+            options.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
+            options.setExperimentalOption("useAutomationExtension", false);
+
+            WebDriver chromeDriver = new ChromeDriver(options);
+            chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            chromeDriver.manage().window().maximize();
+
+            driver.set(chromeDriver);
+        } else {
+            System.out.println("[DriverFactory] Reusing existing driver for thread: ");
+        }
+
+        return driver.get();
+    }
+
     public static WebDriver getDriver() {
         return driver.get();
     }
 
-    public static WebDriver initDriver() {
-        ChromeOptions options = new ChromeOptions();
-
-        // Existing incognito mode
-        options.addArguments("--incognito");
-
-        // ✅ Disable Chrome's password manager
-        options.addArguments("--disable-save-password-bubble");
-        options.addArguments("--disable-notifications");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--disable-infobars");
-
-        // ✅ Hide "Chrome is being controlled by automated test software" message
-        options.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
-        options.setExperimentalOption("useAutomationExtension", false);
-
-        WebDriver webDriver = new ChromeDriver(options);
-        webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        webDriver.manage().window().maximize();
-
-        driver.set(webDriver);
-        return webDriver;
-    }
-
-
     public static void quitDriver() {
         WebDriver webDriver = driver.get();
         if (webDriver != null) {
-            System.out.println("Closing browser...");
+            System.out.println("[DriverFactory] Quitting driver for thread: " );
             webDriver.quit();
-            driver.remove(); // important to clear ThreadLocal reference
+            driver.remove(); 
         } else {
-            System.out.println("Driver was already null.");
+            System.out.println("[DriverFactory] No driver found for thread: ");
         }
     }
-
-
-    
 }

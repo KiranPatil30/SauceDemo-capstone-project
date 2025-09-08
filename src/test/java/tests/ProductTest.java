@@ -29,7 +29,6 @@ public class ProductTest extends BaseTest {
 
     @BeforeClass
     public void setUp() {
-        // ✅ Use DriverFactory to initialize WebDriver with all Chrome options
         driver = DriverFactory.initDriver();
 
         driver.get("https://www.saucedemo.com/");
@@ -42,18 +41,14 @@ public class ProductTest extends BaseTest {
         productPage = new ProductPage(driver);
     }
 
-
-
-
- @AfterMethod
- public void resetAppState() {
-     // This refreshes the page, which also resets the cart on this specific website.
-     driver.navigate().refresh(); 
- }
+    @AfterMethod
+	 public void resetAppState() {
+	     driver.navigate().refresh(); 
+	 }
+	 
     @Test(priority = 1)
-    public void verifyProductListDisplay() throws InterruptedException {
+    public void verifyProductListDisplay() {
         Assert.assertTrue(productPage.allProductsHaveDetails(), "Not all product elements are properly displayed.");
-        ScreenshotUtil.takeScreenshot(driver, "TC009_TC010_verifyProductListDisplay");
     }
 
     @Test(priority = 2)
@@ -63,7 +58,6 @@ public class ProductTest extends BaseTest {
         List<String> expected = new ArrayList<>(actual);
         Collections.sort(expected);
         Assert.assertEquals(actual, expected, "Products are not sorted A to Z");
-        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByNameAToZ");
         
     }
 
@@ -74,7 +68,6 @@ public class ProductTest extends BaseTest {
         List<String> expected = new ArrayList<>(actual);
         Collections.sort(expected, Collections.reverseOrder());
         Assert.assertEquals(actual, expected, "Products are not sorted Z to A");
-        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByNameZToA");
 
     }
 
@@ -85,7 +78,6 @@ public class ProductTest extends BaseTest {
         List<Double> expected = new ArrayList<>(actual);
         Collections.sort(expected);
         Assert.assertEquals(actual, expected, "Products are not sorted Low to High");
-        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByPriceLowToHigh");
 
     }
 
@@ -96,32 +88,27 @@ public class ProductTest extends BaseTest {
         List<Double> expected = new ArrayList<>(actual);
         Collections.sort(expected, Collections.reverseOrder());
         Assert.assertEquals(actual, expected, "Products are not sorted High to Low");
-        ScreenshotUtil.takeScreenshot(driver, "TC011_sortByPriceHighToLow");
 
     }
 
- // Change this test's priority from 7 to 6
     @Test(priority = 6)
     public void addProductToCart() throws InterruptedException {
         productPage.addProductToCart("Sauce Labs Backpack");
         Assert.assertEquals(productPage.getAddToCartButtonText("Sauce Labs Backpack"), "Remove");
-        ScreenshotUtil.takeScreenshot(driver, "TC012_addProductToCart");
     }
 
 
 
     @Test(priority = 9)
-    public void clickOnProductDetailsPage() throws InterruptedException {
+    public void clickOnProductDetailsPage() {
         productPage.clickOnProduct("Sauce Labs Backpack");
         Assert.assertEquals(productPage.getProductDetailName(), "Sauce Labs Backpack", "Incorrect product detail page");
-        ScreenshotUtil.takeScreenshot(driver, "TC015_clickOnProductDetailsPage");
 
     }
 
     @Test(priority = 10, expectedExceptions = RuntimeException.class)
     public void addInvalidProduct() throws InterruptedException {
         productPage.addProductToCart("Non Existent Product");
-        ScreenshotUtil.takeScreenshot(driver, "TC016_addInvalidProduct");
 
     }
 

@@ -2,31 +2,43 @@ package stepDefinitions;
 
 import static utils.DriverFactory.getDriver;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import io.cucumber.java.en.*;
 
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pages.CartPage;
 import pages.LoginPage;
 import pages.ProductPage;
+import utils.DriverFactory;
 
 public class CartStep {
 
     LoginPage loginPage;
     ProductPage productPage;
     CartPage cartPage;
-
+    WebDriver driver;
     String baseUrl = "https://www.saucedemo.com";
 
+    @Before
+    public void setUp() {
+        driver = DriverFactory.initDriver();
+        loginPage = new LoginPage(driver);   
+    }
     @Given("the user is on the login page")
     public void user_is_on_login_page() {
         getDriver().get(baseUrl);
         loginPage = new LoginPage(getDriver());
     }
 
-    @When("the user logs in with username {string} and password {string}")
+
+    @Given("the user logs in with username {string} and password {string}")
     public void user_logs_in(String username, String password) {
+        driver.get("https://www.saucedemo.com/");
+
         loginPage.login(username, password);
-        productPage = new ProductPage(getDriver());
     }
 
     @Then("the user should be redirected to the products page")
@@ -81,7 +93,7 @@ public class CartStep {
 
     @Given("the user is on the cart page")
     public void user_is_on_cart_page() {
-        user_is_logged_in(); // ✅ ensures productPage is initialized
+        user_is_logged_in(); 
         user_navigates_to_cart();
         Assert.assertTrue(cartPage.isOnCartPage());
     }
@@ -91,11 +103,6 @@ public class CartStep {
     public void user_clicks_continue_shopping() {
         cartPage.clickContinueShopping();
     }
-//
-//    @Then("the user should be redirected to the products page")
-//    public void user_should_be_redirected_to_products_page() {
-//        Assert.assertTrue(getDriver().getCurrentUrl().contains("inventory"));
-//    }
 
     @When("the user proceeds to checkout")
     public void user_proceeds_to_checkout() {
