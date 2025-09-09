@@ -68,7 +68,7 @@ pipeline {
     post {
         always {
             // Archive screenshots
-            archiveArtifacts artifacts: 'reports/screenshot/*', fingerprint: true
+            archiveArtifacts artifacts: 'reports/screenshots/*', fingerprint: true
  
             // Publish Cucumber Report
             publishHTML(target: [
