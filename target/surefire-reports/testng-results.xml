@@ -2,239 +2,239 @@
 <testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-09T09:52:45 IST" name="MySuite" finished-at="2025-09-09T09:53:35 IST" duration-ms="49847">
+  <suite started-at="2025-09-09T09:58:18 IST" name="MySuite" finished-at="2025-09-09T09:59:08 IST" duration-ms="50151">
     <groups>
       <group name="login">
         <method signature="LoginTest.testValidLogin()[pri:8, instance:tests.LoginTest@23e84203]" name="testValidLogin" class="tests.LoginTest"/>
       </group> <!-- login -->
     </groups>
-    <test started-at="2025-09-09T09:52:45 IST" name="SauceDemo Website Tests" finished-at="2025-09-09T09:53:35 IST" duration-ms="49847">
+    <test started-at="2025-09-09T09:58:18 IST" name="SauceDemo Website Tests" finished-at="2025-09-09T09:59:08 IST" duration-ms="50151">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:52 IST" name="suiteSetup" finished-at="2025-09-09T09:52:55 IST" duration-ms="2965" status="PASS">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:25 IST" name="suiteSetup" finished-at="2025-09-09T09:58:28 IST" duration-ms="3015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:55 IST" name="setupTest" finished-at="2025-09-09T09:52:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:28 IST" name="setupTest" finished-at="2025-09-09T09:58:28 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:55 IST" name="loadLoginPage" finished-at="2025-09-09T09:52:55 IST" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:28 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:28 IST" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testProblemUser()[pri:2, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:55 IST" name="testProblemUser" finished-at="2025-09-09T09:52:56 IST" duration-ms="857" status="PASS">
+        <test-method signature="testProblemUser()[pri:2, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:28 IST" name="testProblemUser" finished-at="2025-09-09T09:58:29 IST" duration-ms="796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProblemUser -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:56 IST" name="loadLoginPage" finished-at="2025-09-09T09:52:56 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:29 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:29 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testEmptyUsername()[pri:3, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:56 IST" name="testEmptyUsername" finished-at="2025-09-09T09:52:57 IST" duration-ms="684" status="PASS">
+        <test-method signature="testEmptyUsername()[pri:3, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:29 IST" name="testEmptyUsername" finished-at="2025-09-09T09:58:30 IST" duration-ms="592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyUsername -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:57 IST" name="loadLoginPage" finished-at="2025-09-09T09:52:57 IST" duration-ms="169" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:30 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:30 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testInvalidUsername()[pri:4, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:57 IST" name="testInvalidUsername" finished-at="2025-09-09T09:52:58 IST" duration-ms="829" status="PASS">
+        <test-method signature="testInvalidUsername()[pri:4, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:30 IST" name="testInvalidUsername" finished-at="2025-09-09T09:58:31 IST" duration-ms="759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidUsername -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:58 IST" name="loadLoginPage" finished-at="2025-09-09T09:52:58 IST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:31 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:31 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testEmptyPassword()[pri:5, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:58 IST" name="testEmptyPassword" finished-at="2025-09-09T09:52:59 IST" duration-ms="1041" status="PASS">
+        <test-method signature="testEmptyPassword()[pri:5, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:31 IST" name="testEmptyPassword" finished-at="2025-09-09T09:58:32 IST" duration-ms="789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyPassword -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:59 IST" name="loadLoginPage" finished-at="2025-09-09T09:52:59 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:32 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:32 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testInvalidPassword()[pri:6, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:52:59 IST" name="testInvalidPassword" finished-at="2025-09-09T09:53:00 IST" duration-ms="1004" status="PASS">
+        <test-method signature="testInvalidPassword()[pri:6, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:32 IST" name="testInvalidPassword" finished-at="2025-09-09T09:58:33 IST" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidPassword -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:01 IST" name="loadLoginPage" finished-at="2025-09-09T09:53:01 IST" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:33 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:33 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testEmptyUsernameAndPassword()[pri:7, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:01 IST" name="testEmptyUsernameAndPassword" finished-at="2025-09-09T09:53:02 IST" duration-ms="1153" status="PASS">
+        <test-method signature="testEmptyUsernameAndPassword()[pri:7, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:33 IST" name="testEmptyUsernameAndPassword" finished-at="2025-09-09T09:58:34 IST" duration-ms="739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testEmptyUsernameAndPassword -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:02 IST" name="loadLoginPage" finished-at="2025-09-09T09:53:02 IST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:34 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:34 IST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testLockedOutUser()[pri:8, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:02 IST" name="testLockedOutUser" finished-at="2025-09-09T09:53:03 IST" duration-ms="864" status="PASS">
+        <test-method signature="testLockedOutUser()[pri:8, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:34 IST" name="testLockedOutUser" finished-at="2025-09-09T09:58:35 IST" duration-ms="782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLockedOutUser -->
-        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:03 IST" name="loadLoginPage" finished-at="2025-09-09T09:53:03 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="loadLoginPage()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:35 IST" name="loadLoginPage" finished-at="2025-09-09T09:58:35 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadLoginPage -->
-        <test-method signature="testValidLogin()[pri:8, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:03 IST" name="testValidLogin" finished-at="2025-09-09T09:53:04 IST" duration-ms="974" status="PASS">
+        <test-method signature="testValidLogin()[pri:8, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:35 IST" name="testValidLogin" finished-at="2025-09-09T09:58:36 IST" duration-ms="830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:53:05 IST" name="suiteTearDown" finished-at="2025-09-09T09:53:05 IST" duration-ms="359" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.LoginTest@23e84203]" started-at="2025-09-09T09:58:36 IST" name="suiteTearDown" finished-at="2025-09-09T09:58:36 IST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.CartTest">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:13 IST" name="suiteSetup" finished-at="2025-09-09T09:53:15 IST" duration-ms="2467" status="PASS">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:58:45 IST" name="suiteSetup" finished-at="2025-09-09T09:58:48 IST" duration-ms="2981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method is-config="true" signature="setUpPages()[pri:0, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:15 IST" name="setUpPages" finished-at="2025-09-09T09:53:16 IST" duration-ms="586" status="PASS">
+        <test-method is-config="true" signature="setUpPages()[pri:0, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:58:48 IST" name="setUpPages" finished-at="2025-09-09T09:58:49 IST" duration-ms="1208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPages -->
-        <test-method signature="testAddProductToCart()[pri:1, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:16 IST" name="testAddProductToCart" finished-at="2025-09-09T09:53:17 IST" duration-ms="782" status="PASS">
+        <test-method signature="testAddProductToCart()[pri:1, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:58:49 IST" name="testAddProductToCart" finished-at="2025-09-09T09:58:50 IST" duration-ms="857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddProductToCart -->
-        <test-method signature="testRemoveProductFromCart()[pri:2, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:17 IST" name="testRemoveProductFromCart" finished-at="2025-09-09T09:53:28 IST" duration-ms="10870" status="PASS">
+        <test-method signature="testRemoveProductFromCart()[pri:2, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:58:50 IST" name="testRemoveProductFromCart" finished-at="2025-09-09T09:59:01 IST" duration-ms="10985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveProductFromCart -->
-        <test-method signature="testContinueShopping()[pri:4, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:28 IST" name="testContinueShopping" finished-at="2025-09-09T09:53:28 IST" duration-ms="294" status="PASS">
+        <test-method signature="testContinueShopping()[pri:4, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:59:01 IST" name="testContinueShopping" finished-at="2025-09-09T09:59:01 IST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testContinueShopping -->
-        <test-method signature="testProceedToCheckout()[pri:5, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:28 IST" name="testProceedToCheckout" finished-at="2025-09-09T09:53:29 IST" duration-ms="511" status="PASS">
+        <test-method signature="testProceedToCheckout()[pri:5, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:59:01 IST" name="testProceedToCheckout" finished-at="2025-09-09T09:59:02 IST" duration-ms="518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProceedToCheckout -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:53:29 IST" name="suiteTearDown" finished-at="2025-09-09T09:53:29 IST" duration-ms="413" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.CartTest@73eb439a]" started-at="2025-09-09T09:59:02 IST" name="suiteTearDown" finished-at="2025-09-09T09:59:02 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
       </class> <!-- tests.CartTest -->
       <class name="integration.IntegrationTest">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:integration.IntegrationTest@5890e879]" started-at="2025-09-09T09:52:45 IST" name="suiteSetup" finished-at="2025-09-09T09:52:49 IST" duration-ms="4105" status="PASS">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:integration.IntegrationTest@5890e879]" started-at="2025-09-09T09:58:18 IST" name="suiteSetup" finished-at="2025-09-09T09:58:22 IST" duration-ms="4153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method signature="testCompleteUserJourney()[pri:0, instance:integration.IntegrationTest@5890e879]" started-at="2025-09-09T09:52:49 IST" name="testCompleteUserJourney" finished-at="2025-09-09T09:52:51 IST" duration-ms="2001" status="PASS">
+        <test-method signature="testCompleteUserJourney()[pri:0, instance:integration.IntegrationTest@5890e879]" started-at="2025-09-09T09:58:22 IST" name="testCompleteUserJourney" finished-at="2025-09-09T09:58:24 IST" duration-ms="1988" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCompleteUserJourney -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:integration.IntegrationTest@5890e879]" started-at="2025-09-09T09:52:51 IST" name="suiteTearDown" finished-at="2025-09-09T09:52:52 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:integration.IntegrationTest@5890e879]" started-at="2025-09-09T09:58:24 IST" name="suiteTearDown" finished-at="2025-09-09T09:58:25 IST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
       </class> <!-- integration.IntegrationTest -->
       <class name="tests.ProductTest">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:05 IST" name="suiteSetup" finished-at="2025-09-09T09:53:08 IST" duration-ms="2952" status="PASS">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:36 IST" name="suiteSetup" finished-at="2025-09-09T09:58:39 IST" duration-ms="3066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:08 IST" name="setUp" finished-at="2025-09-09T09:53:08 IST" duration-ms="502" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:39 IST" name="setUp" finished-at="2025-09-09T09:58:40 IST" duration-ms="408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyProductListDisplay()[pri:1, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:08 IST" name="verifyProductListDisplay" finished-at="2025-09-09T09:53:09 IST" duration-ms="803" status="PASS">
+        <test-method signature="verifyProductListDisplay()[pri:1, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:40 IST" name="verifyProductListDisplay" finished-at="2025-09-09T09:58:41 IST" duration-ms="824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductListDisplay -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:09 IST" name="resetAppState" finished-at="2025-09-09T09:53:09 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:41 IST" name="resetAppState" finished-at="2025-09-09T09:58:41 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="sortByNameAToZ()[pri:2, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:09 IST" name="sortByNameAToZ" finished-at="2025-09-09T09:53:10 IST" duration-ms="508" status="PASS">
+        <test-method signature="sortByNameAToZ()[pri:2, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:41 IST" name="sortByNameAToZ" finished-at="2025-09-09T09:58:41 IST" duration-ms="449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByNameAToZ -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:10 IST" name="resetAppState" finished-at="2025-09-09T09:53:10 IST" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:41 IST" name="resetAppState" finished-at="2025-09-09T09:58:41 IST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="sortByNameZToA()[pri:3, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:10 IST" name="sortByNameZToA" finished-at="2025-09-09T09:53:10 IST" duration-ms="445" status="PASS">
+        <test-method signature="sortByNameZToA()[pri:3, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:42 IST" name="sortByNameZToA" finished-at="2025-09-09T09:58:42 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByNameZToA -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:10 IST" name="resetAppState" finished-at="2025-09-09T09:53:11 IST" duration-ms="53" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:42 IST" name="resetAppState" finished-at="2025-09-09T09:58:42 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="sortByPriceLowToHigh()[pri:4, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:11 IST" name="sortByPriceLowToHigh" finished-at="2025-09-09T09:53:11 IST" duration-ms="408" status="PASS">
+        <test-method signature="sortByPriceLowToHigh()[pri:4, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:42 IST" name="sortByPriceLowToHigh" finished-at="2025-09-09T09:58:42 IST" duration-ms="411" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByPriceLowToHigh -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:11 IST" name="resetAppState" finished-at="2025-09-09T09:53:11 IST" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:43 IST" name="resetAppState" finished-at="2025-09-09T09:58:43 IST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="sortByPriceHighToLow()[pri:5, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:11 IST" name="sortByPriceHighToLow" finished-at="2025-09-09T09:53:11 IST" duration-ms="330" status="PASS">
+        <test-method signature="sortByPriceHighToLow()[pri:5, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:43 IST" name="sortByPriceHighToLow" finished-at="2025-09-09T09:58:43 IST" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sortByPriceHighToLow -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:12 IST" name="resetAppState" finished-at="2025-09-09T09:53:12 IST" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:43 IST" name="resetAppState" finished-at="2025-09-09T09:58:43 IST" duration-ms="85" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="addProductToCart()[pri:6, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:12 IST" name="addProductToCart" finished-at="2025-09-09T09:53:12 IST" duration-ms="365" status="PASS">
+        <test-method signature="addProductToCart()[pri:6, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:43 IST" name="addProductToCart" finished-at="2025-09-09T09:58:44 IST" duration-ms="276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addProductToCart -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:12 IST" name="resetAppState" finished-at="2025-09-09T09:53:12 IST" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:44 IST" name="resetAppState" finished-at="2025-09-09T09:58:44 IST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method signature="clickOnProductDetailsPage()[pri:7, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:12 IST" name="clickOnProductDetailsPage" finished-at="2025-09-09T09:53:12 IST" duration-ms="332" status="PASS">
+        <test-method signature="clickOnProductDetailsPage()[pri:7, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:44 IST" name="clickOnProductDetailsPage" finished-at="2025-09-09T09:58:44 IST" duration-ms="382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnProductDetailsPage -->
-        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:13 IST" name="resetAppState" finished-at="2025-09-09T09:53:13 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="resetAppState()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:44 IST" name="resetAppState" finished-at="2025-09-09T09:58:44 IST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetAppState -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:53:13 IST" name="suiteTearDown" finished-at="2025-09-09T09:53:13 IST" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.ProductTest@19932c16]" started-at="2025-09-09T09:58:44 IST" name="suiteTearDown" finished-at="2025-09-09T09:58:45 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
       </class> <!-- tests.ProductTest -->
       <class name="tests.CheckoutTest">
-        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:29 IST" name="suiteSetup" finished-at="2025-09-09T09:53:31 IST" duration-ms="2154" status="PASS">
+        <test-method is-config="true" signature="suiteSetup()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:02 IST" name="suiteSetup" finished-at="2025-09-09T09:59:05 IST" duration-ms="2735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteSetup -->
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:31 IST" name="setUpTest" finished-at="2025-09-09T09:53:33 IST" duration-ms="1186" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:05 IST" name="setUpTest" finished-at="2025-09-09T09:59:06 IST" duration-ms="1200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:33 IST" name="resetToCheckoutForm" finished-at="2025-09-09T09:53:33 IST" duration-ms="48" status="PASS">
+        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:06 IST" name="resetToCheckoutForm" finished-at="2025-09-09T09:59:06 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetToCheckoutForm -->
-        <test-method signature="navigateToCheckoutPage()[pri:1, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:33 IST" name="navigateToCheckoutPage" finished-at="2025-09-09T09:53:33 IST" duration-ms="57" status="PASS">
+        <test-method signature="navigateToCheckoutPage()[pri:1, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:06 IST" name="navigateToCheckoutPage" finished-at="2025-09-09T09:59:06 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToCheckoutPage -->
-        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:33 IST" name="resetToCheckoutForm" finished-at="2025-09-09T09:53:33 IST" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:07 IST" name="resetToCheckoutForm" finished-at="2025-09-09T09:59:07 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetToCheckoutForm -->
-        <test-method signature="checkoutWithMissingRequiredFields()[pri:2, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:33 IST" name="checkoutWithMissingRequiredFields" finished-at="2025-09-09T09:53:34 IST" duration-ms="696" status="PASS">
+        <test-method signature="checkoutWithMissingRequiredFields()[pri:2, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:07 IST" name="checkoutWithMissingRequiredFields" finished-at="2025-09-09T09:59:07 IST" duration-ms="609" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutWithMissingRequiredFields -->
-        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:34 IST" name="resetToCheckoutForm" finished-at="2025-09-09T09:53:34 IST" duration-ms="63" status="PASS">
+        <test-method is-config="true" signature="resetToCheckoutForm()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:07 IST" name="resetToCheckoutForm" finished-at="2025-09-09T09:59:07 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resetToCheckoutForm -->
-        <test-method signature="checkoutWithValidInformation()[pri:3, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:34 IST" name="checkoutWithValidInformation" finished-at="2025-09-09T09:53:35 IST" duration-ms="817" status="PASS">
+        <test-method signature="checkoutWithValidInformation()[pri:3, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:07 IST" name="checkoutWithValidInformation" finished-at="2025-09-09T09:59:08 IST" duration-ms="507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutWithValidInformation -->
-        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:53:35 IST" name="suiteTearDown" finished-at="2025-09-09T09:53:35 IST" duration-ms="256" status="PASS">
+        <test-method is-config="true" signature="suiteTearDown()[pri:0, instance:tests.CheckoutTest@514646ef]" started-at="2025-09-09T09:59:08 IST" name="suiteTearDown" finished-at="2025-09-09T09:59:08 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- suiteTearDown -->
