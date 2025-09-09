@@ -1,18 +1,18 @@
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\base\BaseTest.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\com\example\SauceDemo_capstone_project\AppTest.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\integration\IntegrationTest.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\listeners\TestListener.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\pages\CartPage.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\pages\CheckoutPage.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\pages\LoginPage.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\pages\ProductPage.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\runners\TestRunner.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\stepDefinitions\CartStep.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\stepDefinitions\CheckoutSteps.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\stepDefinitions\Hooks.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\stepDefinitions\LoginSteps.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\stepDefinitions\ProductSteps.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\tests\CartTest.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\tests\CheckoutTest.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\tests\LoginTest.java
-D:\Capstone Project\SauceDemo-capstone-project\src\test\java\tests\ProductTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\base\BaseTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\com\example\SauceDemo_capstone_project\AppTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\integration\IntegrationTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\listeners\TestListener.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\pages\CartPage.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\pages\CheckoutPage.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\pages\LoginPage.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\pages\ProductPage.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\runners\TestRunner.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\stepDefinitions\CartStep.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\stepDefinitions\CheckoutSteps.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\stepDefinitions\Hooks.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\stepDefinitions\LoginSteps.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\stepDefinitions\ProductSteps.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\tests\CartTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\tests\CheckoutTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\tests\LoginTest.java
+C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\src\test\java\tests\ProductTest.java
