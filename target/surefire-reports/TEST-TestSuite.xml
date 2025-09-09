@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="47.161" tests="23" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="61.866" tests="23" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4\bin"/>
-    <property name="sun.java.command" value="C:\Windows\Temp\surefire3288528866346644596\surefirebooter-20250909100328278_3.jar C:\Windows\Temp\surefire3288528866346644596 2025-09-09T10-03-27_999-jvmRun1 surefire-20250909100328278_1tmp surefire_0-20250909100328278_2tmp"/>
+    <property name="sun.java.command" value="C:\Windows\Temp\surefire10958740496096055813\surefirebooter-20250909102423455_3.jar C:\Windows\Temp\surefire10958740496096055813 2025-09-09T10-24-23_128-jvmRun1 surefire-20250909102423455_1tmp surefire_0-20250909102423455_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\target\test-classes;C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\4.23.0\selenium-java-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\4.23.0\selenium-api-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.23.0\selenium-chrome-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.23.0\selenium-chromium-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-json\4.23.0\selenium-json-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.23.0\selenium-manager-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.23.0\selenium-devtools-v125-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.23.0\selenium-devtools-v126-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.23.0\selenium-devtools-v127-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.23.0\selenium-devtools-v85-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.23.0\selenium-edge-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.23.0\selenium-firefox-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-http\4.23.0\selenium-http-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.23.0\selenium-ie-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.23.0\selenium-remote-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api\1.40.0\opentelemetry-api-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-context\1.40.0\opentelemetry-context-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.40.0\opentelemetry-exporter-logging-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.40.0\opentelemetry-sdk-common-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.40.0\opentelemetry-sdk-extension-autoconfigure-spi-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.40.0\opentelemetry-sdk-extension-autoconfigure-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.40.0-alpha\opentelemetry-api-incubator-1.40.0-alpha.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.40.0\opentelemetry-sdk-trace-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.40.0\opentelemetry-sdk-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.40.0\opentelemetry-sdk-metrics-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.40.0\opentelemetry-sdk-logs-1.40.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-os\4.23.0\selenium-os-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.23.0\selenium-safari-driver-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\4.23.0\selenium-support-4.23.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\projectlombok\lombok\1.18.28\lombok-1.18.28.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire3288528866346644596\surefirebooter-20250909100328278_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Windows\Temp\surefire10958740496096055813\surefirebooter-20250909102423455_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4+11-LTS-179"/>
@@ -56,144 +56,144 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testCompleteUserJourney" classname="integration.IntegrationTest" time="1.611">
+  <testcase name="testCompleteUserJourney" classname="integration.IntegrationTest" time="2.694">
     <system-out><![CDATA[Test Suite started!
 [DriverFactory] Initializing ChromeDriver for thread: 
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Sep 09, 2025 10:03:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Sep 09, 2025 10:24:28 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sep 09, 2025 10:03:32 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sep 09, 2025 10:24:29 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testProblemUser" classname="tests.LoginTest" time="0.614">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testCompleteUserJourney_1757392414902.png
+  <testcase name="testProblemUser" classname="tests.LoginTest" time="1.322">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testCompleteUserJourney_1757393672471.png
 [DriverFactory] Quitting driver for thread: 
 [DriverFactory] Initializing ChromeDriver for thread: 
 [DriverFactory] Reusing existing driver for thread: 
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392417467.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393678081.png
 ]]></system-out>
-    <system-err><![CDATA[Sep 09, 2025 10:03:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Sep 09, 2025 10:24:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sep 09, 2025 10:03:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sep 09, 2025 10:24:36 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testEmptyUsername" classname="tests.LoginTest" time="0.523">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testProblemUser_1757392418166.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392418419.png
+  <testcase name="testEmptyUsername" classname="tests.LoginTest" time="1.258">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testProblemUser_1757393679595.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393679865.png
 ]]></system-out>
   </testcase>
-  <testcase name="testInvalidUsername" classname="tests.LoginTest" time="0.519">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testEmptyUsername_1757392419013.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392419176.png
+  <testcase name="testInvalidUsername" classname="tests.LoginTest" time="1.424">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testEmptyUsername_1757393681255.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393681506.png
 ]]></system-out>
   </testcase>
-  <testcase name="testEmptyPassword" classname="tests.LoginTest" time="0.588">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testInvalidUsername_1757392419770.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392419927.png
+  <testcase name="testEmptyPassword" classname="tests.LoginTest" time="0.518">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testInvalidUsername_1757393683020.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393683200.png
 ]]></system-out>
   </testcase>
-  <testcase name="testInvalidPassword" classname="tests.LoginTest" time="0.417">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testEmptyPassword_1757392420568.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392420685.png
+  <testcase name="testInvalidPassword" classname="tests.LoginTest" time="0.618">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testEmptyPassword_1757393683790.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393683954.png
 ]]></system-out>
   </testcase>
-  <testcase name="testEmptyUsernameAndPassword" classname="tests.LoginTest" time="0.615">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testInvalidPassword_1757392421218.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392421410.png
+  <testcase name="testEmptyUsernameAndPassword" classname="tests.LoginTest" time="0.514">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testInvalidPassword_1757393684645.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393684837.png
 ]]></system-out>
   </testcase>
-  <testcase name="testLockedOutUser" classname="tests.LoginTest" time="0.583">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testEmptyUsernameAndPassword_1757392422131.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392422331.png
+  <testcase name="testLockedOutUser" classname="tests.LoginTest" time="0.83">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testEmptyUsernameAndPassword_1757393685422.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393685593.png
 ]]></system-out>
   </testcase>
-  <testcase name="testValidLogin" classname="tests.LoginTest" time="0.622">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testLockedOutUser_1757392423019.png
-Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757392423221.png
+  <testcase name="testValidLogin" classname="tests.LoginTest" time="1.822">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testLockedOutUser_1757393686508.png
+Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\LoginPage_Loaded_1757393686838.png
 ]]></system-out>
   </testcase>
-  <testcase name="verifyProductListDisplay" classname="tests.ProductTest" time="0.792">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testValidLogin_1757392423978.png
+  <testcase name="verifyProductListDisplay" classname="tests.ProductTest" time="0.696">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testValidLogin_1757393688775.png
 [DriverFactory] Quitting driver for thread: 
 [DriverFactory] Initializing ChromeDriver for thread: 
 [DriverFactory] Reusing existing driver for thread: 
 ]]></system-out>
-    <system-err><![CDATA[Sep 09, 2025 10:03:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Sep 09, 2025 10:24:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sep 09, 2025 10:03:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sep 09, 2025 10:24:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="sortByNameAToZ" classname="tests.ProductTest" time="0.513">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\verifyProductListDisplay_1757392428185.png
+  <testcase name="sortByNameAToZ" classname="tests.ProductTest" time="0.403">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\verifyProductListDisplay_1757393696053.png
 ]]></system-out>
   </testcase>
-  <testcase name="sortByNameZToA" classname="tests.ProductTest" time="0.382">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByNameAToZ_1757392428900.png
+  <testcase name="sortByNameZToA" classname="tests.ProductTest" time="0.424">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByNameAToZ_1757393696923.png
 ]]></system-out>
   </testcase>
-  <testcase name="sortByPriceLowToHigh" classname="tests.ProductTest" time="0.445">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByNameZToA_1757392429496.png
+  <testcase name="sortByPriceLowToHigh" classname="tests.ProductTest" time="0.266">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByNameZToA_1757393697472.png
 ]]></system-out>
   </testcase>
-  <testcase name="sortByPriceHighToLow" classname="tests.ProductTest" time="0.453">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByPriceLowToHigh_1757392430140.png
+  <testcase name="sortByPriceHighToLow" classname="tests.ProductTest" time="0.488">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByPriceLowToHigh_1757393697986.png
 ]]></system-out>
   </testcase>
-  <testcase name="addProductToCart" classname="tests.ProductTest" time="0.295">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByPriceHighToLow_1757392430814.png
+  <testcase name="addProductToCart" classname="tests.ProductTest" time="0.374">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\sortByPriceHighToLow_1757393698770.png
 ]]></system-out>
   </testcase>
-  <testcase name="clickOnProductDetailsPage" classname="tests.ProductTest" time="0.352">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\addProductToCart_1757392431359.png
+  <testcase name="clickOnProductDetailsPage" classname="tests.ProductTest" time="0.478">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\addProductToCart_1757393699641.png
 ]]></system-out>
   </testcase>
-  <testcase name="testAddProductToCart" classname="tests.CartTest" time="0.817">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\clickOnProductDetailsPage_1757392431930.png
+  <testcase name="testAddProductToCart" classname="tests.CartTest" time="0.97">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\clickOnProductDetailsPage_1757393700738.png
 [DriverFactory] Quitting driver for thread: 
 [DriverFactory] Initializing ChromeDriver for thread: 
 ]]></system-out>
-    <system-err><![CDATA[Sep 09, 2025 10:03:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Sep 09, 2025 10:25:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sep 09, 2025 10:03:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sep 09, 2025 10:25:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="testRemoveProductFromCart" classname="tests.CartTest" time="10.958">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testAddProductToCart_1757392436332.png
+  <testcase name="testRemoveProductFromCart" classname="tests.CartTest" time="10.817">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testAddProductToCart_1757393708542.png
 ]]></system-out>
   </testcase>
-  <testcase name="testContinueShopping" classname="tests.CartTest" time="0.266">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testRemoveProductFromCart_1757392447416.png
+  <testcase name="testContinueShopping" classname="tests.CartTest" time="0.143">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testRemoveProductFromCart_1757393719449.png
 ]]></system-out>
   </testcase>
-  <testcase name="testProceedToCheckout" classname="tests.CartTest" time="0.485">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testContinueShopping_1757392447816.png
+  <testcase name="testProceedToCheckout" classname="tests.CartTest" time="0.309">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testContinueShopping_1757393719691.png
 Current URL before checkout: https://www.saucedemo.com/checkout-step-one.html
 ]]></system-out>
   </testcase>
-  <testcase name="navigateToCheckoutPage" classname="tests.CheckoutTest" time="0.102">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testProceedToCheckout_1757392448468.png
+  <testcase name="navigateToCheckoutPage" classname="tests.CheckoutTest" time="0.067">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\testProceedToCheckout_1757393720074.png
 [DriverFactory] Quitting driver for thread: 
 [DriverFactory] Initializing ChromeDriver for thread: 
 ]]></system-out>
-    <system-err><![CDATA[Sep 09, 2025 10:04:10 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Sep 09, 2025 10:25:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 140
-Sep 09, 2025 10:04:10 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Sep 09, 2025 10:25:22 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.23.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="checkoutWithMissingRequiredFields" classname="tests.CheckoutTest" time="0.525">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\navigateToCheckoutPage_1757392452840.png
+  <testcase name="checkoutWithMissingRequiredFields" classname="tests.CheckoutTest" time="0.37">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\navigateToCheckoutPage_1757393723839.png
 ]]></system-out>
   </testcase>
-  <testcase name="checkoutWithValidInformation" classname="tests.CheckoutTest" time="0.768">
-    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\checkoutWithMissingRequiredFields_1757392453504.png
+  <testcase name="checkoutWithValidInformation" classname="tests.CheckoutTest" time="0.361">
+    <system-out><![CDATA[Screenshot saved: C:\ProgramData\Jenkins\.jenkins\workspace\SauceDemo-CI-Pipeline\reports\screenshots\2025-09-09\checkoutWithMissingRequiredFields_1757393724319.png
 ]]></system-out>
   </testcase>
 </testsuite>
