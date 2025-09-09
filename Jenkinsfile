@@ -56,7 +56,7 @@ pipeline {
  
                             REM Push using token
                             
-                            git push https://%GIT_USER%:%GIT_TOKEN%@github.com/Sanchita-Sonawane/saucedemo-captone-project-.git ${BRANCH_NAME}
+                        	git push https://${GIT_USER}:${GIT_TOKEN}@github.com/KiranPatil30/SauceDemo-capstone-project.git ${BRANCH_NAME}
                             
                         """
                     }
