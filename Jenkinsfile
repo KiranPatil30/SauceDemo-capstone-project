@@ -75,7 +75,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'reports/cucumber-reports',
+                reportDir: 'target',
                 reportFiles: 'cucumber.html',
                 reportName: 'Cucumber Report'
             ])
@@ -85,7 +85,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'reports/extent-reports',
+                reportDir: 'reports',
                 reportFiles: 'ExtentReport.html',
                 reportName: 'Extent Report'
             ])
