@@ -1,6 +1,6 @@
-# Created at 2025-09-09T13:07:28.693
+# Created at 2025-09-09T13:08:50.382
 Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
-Thread dump before exiting the process (15820@KiranPatil):
+Thread dump before exiting the process (29480@KiranPatil):
 "main" 
    java.lang.Thread.State: RUNNABLE
         at java.base@17.0.4/java.lang.ProcessImpl.waitForTimeoutInterruptibly(Native Method)
@@ -143,14 +143,6 @@ Thread dump before exiting the process (15820@KiranPatil):
         at java.base@17.0.4/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
 
 "ForkJoinPool.commonPool-worker-6" 
-   java.lang.Thread.State: TIMED_WAITING
-        at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
-        at java.base@17.0.4/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
-        at java.base@17.0.4/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
-        at java.base@17.0.4/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
-        at java.base@17.0.4/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
-
-"ForkJoinPool.commonPool-worker-7" 
    java.lang.Thread.State: WAITING
         at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
         at java.base@17.0.4/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
@@ -158,7 +150,82 @@ Thread dump before exiting the process (15820@KiranPatil):
         at java.base@17.0.4/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
         at java.base@17.0.4/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
 
-"External Process Output Forwarder - C:\WINDOWS\TEMP\selenium-manager8851333199391223792\manager\0.4.23\selenium-manager.exe" 
+"ForkJoinPool.commonPool-worker-7" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.4/java.util.concurrent.locks.LockSupport.parkUntil(LockSupport.java:410)
+        at java.base@17.0.4/java.util.concurrent.ForkJoinPool.awaitWork(ForkJoinPool.java:1726)
+        at java.base@17.0.4/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1623)
+        at java.base@17.0.4/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+"HttpClient-1-SelectorManager" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.4/sun.nio.ch.WEPoll.wait(Native Method)
+        at java.base@17.0.4/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+        at java.base@17.0.4/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+        at java.base@17.0.4/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+        at platform/java.net.http@17.0.4/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:889)
+
+"UrlChecker-2" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.4/java.lang.Thread.run(Thread.java:833)
+
+"Keep-Alive-Timer" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.4/java.lang.Thread.sleep(Native Method)
+        at java.base@17.0.4/sun.net.www.http.KeepAliveCache.run(KeepAliveCache.java:191)
+        at java.base@17.0.4/java.lang.Thread.run(Thread.java:833)
+        at java.base@17.0.4/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:162)
+
+"JdkHttpClient-0-0" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.4/java.lang.Thread.run(Thread.java:833)
+
+"JdkHttpClient-0-1" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.4/java.lang.Thread.run(Thread.java:833)
+
+"JdkHttpClient-0-2" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@17.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@17.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+        at java.base@17.0.4/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+        at java.base@17.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+        at java.base@17.0.4/java.lang.Thread.run(Thread.java:833)
+
+"HttpClient-2-SelectorManager" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@17.0.4/sun.nio.ch.WEPoll.wait(Native Method)
+        at java.base@17.0.4/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+        at java.base@17.0.4/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+        at java.base@17.0.4/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+        at platform/java.net.http@17.0.4/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:889)
+
+"External Process Output Forwarder - C:\WINDOWS\TEMP\selenium-manager7149608736021091596\manager\0.4.23\selenium-manager.exe" 
    java.lang.Thread.State: RUNNABLE
         at java.base@17.0.4/java.io.FileInputStream.readBytes(Native Method)
         at java.base@17.0.4/java.io.FileInputStream.read(FileInputStream.java:276)
